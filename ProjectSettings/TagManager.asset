@@ -3,19 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - ExcludeTeleport
-  - Cubes
-  - Spheres
-  - Saucers
-  - OtherSaucers
-  - Torso
-  - Arm
-  - Leg
-  - SnapCube
-  - SnapCylinder
-  - SnapSaucer
-  - Head
+  tags: []
   layers:
   - Default
   - TransparentFX
