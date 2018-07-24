@@ -4855,7 +4855,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotator: {fileID: 14989647}
   ratio: 360
-  axis: 1
+  RotationAxis: 1
+  ScaleAxis: 1
 --- !u!1 &713004730
 GameObject:
   m_ObjectHideFlags: 0

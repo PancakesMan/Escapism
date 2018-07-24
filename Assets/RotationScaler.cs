@@ -8,7 +8,8 @@ public class RotationScaler : MonoBehaviour {
 
     public GameObject rotator;
     public float ratio = 1.0f;
-    public Axis axis = Axis.X;
+    public Axis RotationAxis = Axis.X;
+    public Axis ScaleAxis = Axis.X;
 
 	// Use this for initialization
 	void Start () {
@@ -18,9 +19,9 @@ public class RotationScaler : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        float scale = rotator.transform.localEulerAngles[(int)axis] / ratio;
+        float scale = rotator.transform.localEulerAngles[(int)RotationAxis] / ratio;
         Vector3 newScale = transform.localScale;
-        newScale[(int)axis] = 1 + scale;
+        newScale[(int)ScaleAxis] = 1 + scale;
         transform.localScale = newScale;
 
         /*
