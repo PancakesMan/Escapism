@@ -17,8 +17,13 @@ public class RotationScaler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float scale = 0.0f;
 
+        float scale = rotator.transform.localEulerAngles[(int)axis] / ratio;
+        Vector3 newScale = transform.localScale;
+        newScale[(int)axis] = 1 + scale;
+        transform.localScale = newScale;
+
+        /*
 		switch (axis)
         {
             case Axis.X:
@@ -32,6 +37,6 @@ public class RotationScaler : MonoBehaviour {
                 break;
             default:
                 break;
-        }
+        }*/
 	}
 }
