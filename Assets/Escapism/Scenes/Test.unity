@@ -220,7 +220,7 @@ MonoBehaviour:
   hingePoint: {fileID: 0}
   angleLimits:
     minimum: -180
-    maximum: 180
+    maximum: 3600
   minMaxThresholdAngle: 1
   restingAngle: 0
   forceRestingAngleThreshold: 1
@@ -304,6 +304,11 @@ Prefab:
       propertyPath: m_Name
       value: SnapDropZone (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
+        type: 2}
+      propertyPath: defaultSnappedInteractableObject
+      value: 
+      objectReference: {fileID: 1736072203}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_IsPrefabParent: 0
@@ -4592,6 +4597,7 @@ GameObject:
   - component: {fileID: 700264017}
   - component: {fileID: 700264016}
   - component: {fileID: 700264015}
+  - component: {fileID: 700264018}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -4665,6 +4671,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 700264013}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &700264018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 700264013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c2b26f438081642b7e2c13140679ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotator: {fileID: 14989647}
+  ratio: 360
+  axis: 1
 --- !u!1 &713004730
 GameObject:
   m_ObjectHideFlags: 0
