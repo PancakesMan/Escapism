@@ -13080,6 +13080,54 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114630781374922292, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+        type: 2}
+      propertyPath: customTracer
+      value: 
+      objectReference: {fileID: 1243129740067272, guid: 55819859b7f22784e98360b14b14b88e,
+        type: 2}
+    - target: {fileID: 114439168855070018, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+        type: 2}
+      propertyPath: customTracer
+      value: 
+      objectReference: {fileID: 1243129740067272, guid: 55819859b7f22784e98360b14b14b88e,
+        type: 2}
+    - target: {fileID: 114630781374922292, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+        type: 2}
+      propertyPath: customCursor
+      value: 
+      objectReference: {fileID: 1652574584400748, guid: 12370ddcc6985ba4abe57fc5b64502f8,
+        type: 2}
+    - target: {fileID: 114439168855070018, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+        type: 2}
+      propertyPath: customCursor
+      value: 
+      objectReference: {fileID: 1652574584400748, guid: 12370ddcc6985ba4abe57fc5b64502f8,
+        type: 2}
+    - target: {fileID: 114630781374922292, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+        type: 2}
+      propertyPath: invalidLocationObject
+      value: 
+      objectReference: {fileID: 1413768137026182, guid: af1c322da33b9ec40b0f5a418ed90ef4,
+        type: 2}
+    - target: {fileID: 114439168855070018, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+        type: 2}
+      propertyPath: invalidLocationObject
+      value: 
+      objectReference: {fileID: 1413768137026182, guid: af1c322da33b9ec40b0f5a418ed90ef4,
+        type: 2}
+    - target: {fileID: 114630781374922292, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+        type: 2}
+      propertyPath: validLocationObject
+      value: 
+      objectReference: {fileID: 1992590638579992, guid: da6c46fadc74b154ca5df638cdb2d592,
+        type: 2}
+    - target: {fileID: 114439168855070018, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+        type: 2}
+      propertyPath: validLocationObject
+      value: 
+      objectReference: {fileID: 1992590638579992, guid: da6c46fadc74b154ca5df638cdb2d592,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c024b5811fc90d24fb5d64f63e35a6ab, type: 2}
   m_IsPrefabParent: 0
