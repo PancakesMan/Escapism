@@ -11,15 +11,23 @@ public class RotationScaler : MonoBehaviour {
     public Axis RotationAxis = Axis.X;
     public Axis ScaleAxis = Axis.X;
 
+    public float rotatorAngle;
+    float lastAngle;
+
 	// Use this for initialization
 	void Start () {
-		
-	}
+        rotatorAngle = rotator.transform.localEulerAngles[(int)RotationAxis];
+        lastAngle = rotatorAngle;
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
-        float scale = rotator.transform.localEulerAngles[(int)RotationAxis] / ratio;
+        float deltaAngle = Mathf.DeltaAngle(rotator.transform.localEulerAngles[(int)RotationAxis], lastAngle);
+        lastAngle = rotator.transform.localEulerAngles[(int)RotationAxis];
+        rotatorAngle += deltaAngle;
+
+        float scale =  rotatorAngle/ ratio;
         Vector3 newScale = transform.localScale;
         newScale[(int)ScaleAxis] = 1 + scale;
         transform.localScale = newScale;
