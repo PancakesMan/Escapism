@@ -18,6 +18,8 @@ public class PlatformScript : MonoBehaviour
     public float MovingDistanceZ = 0;
     public bool NegativeZ = false;
 
+    public float SpeedReduction = 1.0f;
+
     // Use this for initialization
     void Start()
     {
@@ -31,8 +33,8 @@ public class PlatformScript : MonoBehaviour
         // PingPong the platform from Initial Position to
         // Initial Position + DistanceX, Y, and Z
         transform.position = InitialPosition
-            + (MovingDistanceX == 0 ? 0 : Mathf.PingPong(Time.time, MovingDistanceX)) * Vector3.right * (NegativeX ? -1 : 1)
-            + (MovingDistanceY == 0 ? 0 : Mathf.PingPong(Time.time, MovingDistanceY)) * Vector3.up * (NegativeY ? -1 : 1)
-            + (MovingDistanceZ == 0 ? 0 : Mathf.PingPong(Time.time, MovingDistanceZ)) * Vector3.forward * (NegativeZ ? -1 : 1);
+            + (MovingDistanceX == 0 ? 0 : Mathf.PingPong(Time.time / SpeedReduction, MovingDistanceX)) * Vector3.right * (NegativeX ? -1 : 1)
+            + (MovingDistanceY == 0 ? 0 : Mathf.PingPong(Time.time / SpeedReduction, MovingDistanceY)) * Vector3.up * (NegativeY ? -1 : 1)
+            + (MovingDistanceZ == 0 ? 0 : Mathf.PingPong(Time.time / SpeedReduction, MovingDistanceZ)) * Vector3.forward * (NegativeZ ? -1 : 1);
     }
 }
