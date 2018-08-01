@@ -7399,6 +7399,7 @@ MonoBehaviour:
   NegativeY: 0
   MovingDistanceZ: 0.6
   NegativeZ: 0
+  SpeedReduction: 1
 --- !u!23 &995284443
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16166,7 +16167,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 800e7066d76ef454d8ae1b782e26ca03, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 800e7066d76ef454d8ae1b782e26ca03, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16420,3 +16421,4 @@ MonoBehaviour:
   NegativeY: 0
   MovingDistanceZ: 0.6
   NegativeZ: 0
+  SpeedReduction: 1
