@@ -27,25 +27,38 @@ public class ClawMachineController : MonoBehaviour {
                 _TimesButtonPressed += 1;
                 _TimesButtonPressed %= 3;
 
-                switch (_TimesButtonPressed)
-                {
-                    case 0:
-                        FrontBackMover.GetComponent<PlatformScript>().enabled = true;
-                        break;
-
-                    case 1:
-                        FrontBackMover.GetComponent<PlatformScript>().enabled = false;
-                        LeftRightMover.GetComponent<PlatformScript>().enabled = true;
-                        break;
-
-                    case 2:
-                        LeftRightMover.GetComponent<PlatformScript>().enabled = false;
-                        break;
-
-                    default:
-                        break;
-                }
+                Invoke("UpdateMovement", 0.5f);
             }
+        }
+    }
+
+    private void UpdateMovement()
+    {
+        switch (_TimesButtonPressed)
+        {
+            case 0:
+                FrontBackMover.GetComponent<PlatformScript>().enabled = true;
+                FrontBackMover.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
+                break;
+
+            case 1:
+                FrontBackMover.GetComponent<PlatformScript>().enabled = false;
+                LeftRightMover.GetComponent<PlatformScript>().enabled = true;
+                LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
+                break;
+
+            case 2:
+                LeftRightMover.GetComponent<PlatformScript>().enabled = false;
+
+                FrontBackMover.GetComponent<PlatformScript>().enabled = true;
+                FrontBackMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
+
+                LeftRightMover.GetComponent<PlatformScript>().enabled = true;
+                LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
+                break;
+
+            default:
+                break;
         }
     }
 }

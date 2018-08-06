@@ -7531,11 +7531,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05398401376e0ca4eb41252a95659b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mode: 0
   MovingDistanceX: 0
   NegativeX: 0
   MovingDistanceY: 0
   NegativeY: 0
-  MovingDistanceZ: 0.6
+  MovingDistanceZ: 0.7
   NegativeZ: 0
   SpeedReduction: 3
 --- !u!23 &995284443
@@ -16553,9 +16554,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05398401376e0ca4eb41252a95659b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovingDistanceX: 0.68
+  mode: 0
+  MovingDistanceX: 0
   NegativeX: 0
-  MovingDistanceY: 0
+  MovingDistanceY: 1.6
   NegativeY: 0
   MovingDistanceZ: 0
   NegativeZ: 0
