@@ -27,7 +27,7 @@ public class ClawMachineController : MonoBehaviour {
                 _TimesButtonPressed += 1;
                 _TimesButtonPressed %= 3;
 
-                Invoke("UpdateMovement", 0.5f);
+                Invoke("UpdateMovement", 0.1f);
             }
         }
     }
