@@ -16561,4 +16561,4 @@ MonoBehaviour:
   NegativeY: 0
   MovingDistanceZ: 0
   NegativeZ: 0
-  SpeedReduction: 3
+  SpeedReduction: 1

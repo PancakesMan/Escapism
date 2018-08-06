@@ -55,10 +55,28 @@ public class ClawMachineController : MonoBehaviour {
 
                 LeftRightMover.GetComponent<PlatformScript>().enabled = true;
                 LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
+
+                //DropClaw();
                 break;
 
             default:
                 break;
         }
+    }
+
+    private IEnumerable DropClaw()
+    {
+        Claw.GetComponent<PlatformScript>().enabled = true;
+        yield return new WaitForSecondsRealtime(1.0f);
+        Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
+        yield return new WaitForSecondsRealtime(1.0f);
+
+        Claw.GetComponent<PlatformScript>().enabled = false;
+
+        FrontBackMover.GetComponent<PlatformScript>().enabled = true;
+        FrontBackMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
+
+        LeftRightMover.GetComponent<PlatformScript>().enabled = true;
+        LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
     }
 }
