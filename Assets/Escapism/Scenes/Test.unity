@@ -5964,11 +5964,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 754a39ca1be4f514480ac98db33e4ebd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0044
+      value: 0.004
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 754a39ca1be4f514480ac98db33e4ebd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3593
+      value: -1.307
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 754a39ca1be4f514480ac98db33e4ebd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6788,6 +6788,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &884595281 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 754a39ca1be4f514480ac98db33e4ebd, type: 3}
+  m_PrefabInternal: {fileID: 781767662}
+--- !u!114 &884595286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884595281}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05398401376e0ca4eb41252a95659b12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  MovingDistanceX: 0
+  NegativeX: 0
+  MovingDistanceY: 0.9
+  NegativeY: 1
+  MovingDistanceZ: 0
+  NegativeZ: 0
+  SpeedReduction: 1
 --- !u!1001 &891098514
 Prefab:
   m_ObjectHideFlags: 0
@@ -6903,7 +6926,7 @@ MonoBehaviour:
   Active: 1
   FrontBackMover: {fileID: 995284440}
   LeftRightMover: {fileID: 2129384627}
-  Claw: {fileID: 0}
+  Claw: {fileID: 884595281}
 --- !u!114 &894179185
 MonoBehaviour:
   m_ObjectHideFlags: 0
