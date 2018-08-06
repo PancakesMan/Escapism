@@ -6782,6 +6782,7 @@ Transform:
   - {fileID: 1434891481}
   - {fileID: 845278880}
   - {fileID: 2001537837}
+  - {fileID: 894179183}
   - {fileID: 995284441}
   - {fileID: 836176959}
   m_Father: {fileID: 0}
@@ -6855,6 +6856,143 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &894179182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: e294bdf2d2e137a4e91a66022482ddd2, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 894179183}
+  - component: {fileID: 894179188}
+  - component: {fileID: 894179187}
+  - component: {fileID: 894179186}
+  - component: {fileID: 894179185}
+  - component: {fileID: 894179184}
+  m_Layer: 0
+  m_Name: Machine Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &894179183
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: e294bdf2d2e137a4e91a66022482ddd2, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894179182}
+  m_LocalRotation: {x: 0.0001009045, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.2933463, y: -0.5206, z: 2.084}
+  m_LocalScale: {x: 6.57254, y: 4.54385, z: 6.572551}
+  m_Children: []
+  m_Father: {fileID: 876978721}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894179184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894179182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c9854fde9ac0541ba00320a92a417c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  FrontBackMover: {fileID: 995284440}
+  LeftRightMover: {fileID: 2129384627}
+  Claw: {fileID: 0}
+--- !u!114 &894179185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894179182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3658a9254a5b8854c86a3556998414d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  operateAxis: 1
+  ignoreCollisionsWith: []
+  excludeColliderCheckOn: []
+  equalityFidelity: 0.001
+  connectedTo: {fileID: 0}
+  maximumLength: -0.05
+  minMaxThreshold: 0.01
+  positionTarget: 0
+  restingPosition: 0
+  forceRestingPositionThreshold: 1
+  stepValueRange:
+    minimum: 0
+    maximum: 1
+  stepSize: 0.1
+  useStepAsValue: 1
+  snapToStep: 0
+  snapForce: 10
+  precisionGrab: 1
+  detachDistance: 1
+  releaseFriction: 10
+  onlyInteractWith: []
+--- !u!64 &894179186
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894179182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: e294bdf2d2e137a4e91a66022482ddd2, type: 3}
+--- !u!23 &894179187
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: e294bdf2d2e137a4e91a66022482ddd2,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894179182}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: e294bdf2d2e137a4e91a66022482ddd2, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &894179188
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: e294bdf2d2e137a4e91a66022482ddd2,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894179182}
+  m_Mesh: {fileID: 4300000, guid: e294bdf2d2e137a4e91a66022482ddd2, type: 3}
 --- !u!1 &914132184
 GameObject:
   m_ObjectHideFlags: 0
@@ -7380,7 +7518,7 @@ Transform:
   m_Children:
   - {fileID: 2129384631}
   m_Father: {fileID: 876978721}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -179.99998, z: 90.00001}
 --- !u!114 &995284442
 MonoBehaviour:
@@ -7388,7 +7526,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 995284440}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05398401376e0ca4eb41252a95659b12, type: 3}
   m_Name: 
@@ -7399,7 +7537,7 @@ MonoBehaviour:
   NegativeY: 0
   MovingDistanceZ: 0.6
   NegativeZ: 0
-  SpeedReduction: 1
+  SpeedReduction: 3
 --- !u!23 &995284443
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15796,7 +15934,7 @@ GameObject:
   - component: {fileID: 2001537840}
   m_Layer: 0
   m_Name: Button_greybox
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16167,7 +16305,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 800e7066d76ef454d8ae1b782e26ca03, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 800e7066d76ef454d8ae1b782e26ca03, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16410,7 +16548,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2129384627}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05398401376e0ca4eb41252a95659b12, type: 3}
   m_Name: 
@@ -16419,6 +16557,6 @@ MonoBehaviour:
   NegativeX: 0
   MovingDistanceY: 0
   NegativeY: 0
-  MovingDistanceZ: 0.6
+  MovingDistanceZ: 0
   NegativeZ: 0
-  SpeedReduction: 1
+  SpeedReduction: 3
