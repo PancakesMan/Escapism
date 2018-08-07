@@ -2284,8 +2284,8 @@ GameObject:
   - component: {fileID: 263101188}
   - component: {fileID: 263101191}
   m_Layer: 0
-  m_Name: safe_button_1
-  m_TagString: Untagged
+  m_Name: 1
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2320,7 +2320,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -5562,8 +5562,8 @@ GameObject:
   - component: {fileID: 642166955}
   - component: {fileID: 642166958}
   m_Layer: 0
-  m_Name: safe_button_8
-  m_TagString: Untagged
+  m_Name: 8
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5598,7 +5598,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -6005,8 +6005,8 @@ GameObject:
   - component: {fileID: 680047024}
   - component: {fileID: 680047027}
   m_Layer: 0
-  m_Name: safe_button_3
-  m_TagString: Untagged
+  m_Name: 3
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6041,7 +6041,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -7760,8 +7760,8 @@ GameObject:
   - component: {fileID: 871974221}
   - component: {fileID: 871974224}
   m_Layer: 0
-  m_Name: safe_button_cross
-  m_TagString: Untagged
+  m_Name: X
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7796,7 +7796,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -8648,8 +8648,8 @@ GameObject:
   - component: {fileID: 981278745}
   - component: {fileID: 981278748}
   m_Layer: 0
-  m_Name: safe_button_7
-  m_TagString: Untagged
+  m_Name: 7
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8684,7 +8684,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -9995,8 +9995,8 @@ GameObject:
   - component: {fileID: 1138223376}
   - component: {fileID: 1138223379}
   m_Layer: 0
-  m_Name: safe_button_6
-  m_TagString: Untagged
+  m_Name: 6
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10031,7 +10031,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -10217,8 +10217,8 @@ GameObject:
   - component: {fileID: 1176208851}
   - component: {fileID: 1176208854}
   m_Layer: 0
-  m_Name: safe_button_0
-  m_TagString: Untagged
+  m_Name: 0
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10253,7 +10253,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -12663,8 +12663,8 @@ GameObject:
   - component: {fileID: 1424732714}
   - component: {fileID: 1424732717}
   m_Layer: 0
-  m_Name: safe_button_2
-  m_TagString: Untagged
+  m_Name: 2
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12699,7 +12699,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -13352,6 +13352,8 @@ GameObject:
   - component: {fileID: 1502428436}
   - component: {fileID: 1502428435}
   - component: {fileID: 1502428434}
+  - component: {fileID: 1502428445}
+  - component: {fileID: 1502428444}
   m_Layer: 0
   m_Name: safe_door
   m_TagString: Untagged
@@ -13584,6 +13586,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1502428432}
   m_Mesh: {fileID: 4300026, guid: 15f6cef627533d6408c516130bb59ba9, type: 3}
+--- !u!114 &1502428444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1502428432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717bba18a2bad1b4dbd0ced03d8254cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Code:
+  - {fileID: 263101186}
+--- !u!65 &1502428445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1502428432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11846325, y: 0.15210891, z: 0.0014746189}
+  m_Center: {x: 0.09220561, y: -0.0017212629, z: 0.0064289505}
 --- !u!4 &1507441447 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -15345,8 +15372,8 @@ GameObject:
   - component: {fileID: 1698289274}
   - component: {fileID: 1698289277}
   m_Layer: 0
-  m_Name: safe_button_9
-  m_TagString: Untagged
+  m_Name: 9
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15381,7 +15408,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -16188,8 +16215,8 @@ GameObject:
   - component: {fileID: 1752595740}
   - component: {fileID: 1752595743}
   m_Layer: 0
-  m_Name: safe_button_5
-  m_TagString: Untagged
+  m_Name: 5
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16224,7 +16251,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -17326,8 +17353,8 @@ GameObject:
   - component: {fileID: 1895664471}
   - component: {fileID: 1895664474}
   m_Layer: 0
-  m_Name: safe_button_tick
-  m_TagString: Untagged
+  m_Name: O
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17362,7 +17389,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
@@ -18983,8 +19010,8 @@ GameObject:
   - component: {fileID: 2066107207}
   - component: {fileID: 2066107210}
   m_Layer: 0
-  m_Name: safe_button_4
-  m_TagString: Untagged
+  m_Name: 4
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19019,7 +19046,7 @@ MonoBehaviour:
   excludeColliderCheckOn: []
   equalityFidelity: 0.001
   connectedTo: {fileID: 0}
-  maximumLength: -0.005
+  maximumLength: -0.01
   minMaxThreshold: 0.01
   positionTarget: 0
   restingPosition: 0
