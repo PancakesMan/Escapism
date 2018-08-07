@@ -30,6 +30,11 @@ public class ClawMachineController : MonoBehaviour {
                 Invoke("UpdateMovement", 0.1f);
             }
         }
+        else if (other.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            Active = true;
+        }
     }
 
     private void UpdateMovement()
@@ -54,13 +59,6 @@ public class ClawMachineController : MonoBehaviour {
 
                 Claw.GetComponent<PlatformScript>().enabled = true;
                 Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
-
-
-                //FrontBackMover.GetComponent<PlatformScript>().enabled = true;
-                //FrontBackMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
-
-                //LeftRightMover.GetComponent<PlatformScript>().enabled = true;
-                //LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
 
                 Invoke("ResetMachine", Claw.GetComponent<PlatformScript>().MovingDistanceY * 2);
                 break;
