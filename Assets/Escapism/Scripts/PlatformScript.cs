@@ -7,6 +7,8 @@ public enum MoveMode { PingPong, Resetting }
 public class PlatformScript : MonoBehaviour
 {
     private Vector3 _InitialPosition;
+    private float _Timer = 0.0f;
+
     public MoveMode mode = MoveMode.PingPong;
 
     [Range(0, float.MaxValue), Space(10)]
@@ -33,6 +35,8 @@ public class PlatformScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _Timer += Time.deltaTime;
+
         switch (mode)
         {
             case MoveMode.PingPong:
@@ -48,6 +52,7 @@ public class PlatformScript : MonoBehaviour
 
     void ResetPosition()
     {
+        _Timer = 0.0f;
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, _InitialPosition, Time.deltaTime);
     }
 
@@ -56,8 +61,8 @@ public class PlatformScript : MonoBehaviour
         // PingPong the platform from Initial Position to
         // Initial Position + DistanceX, Y, and Z
         transform.localPosition = _InitialPosition
-            + (MovingDistanceX == 0 ? 0 : Mathf.PingPong(Time.time / SpeedReduction, MovingDistanceX)) * Vector3.right * (NegativeX ? -1 : 1)
-            + (MovingDistanceY == 0 ? 0 : Mathf.PingPong(Time.time / SpeedReduction, MovingDistanceY)) * Vector3.up * (NegativeY ? -1 : 1)
-            + (MovingDistanceZ == 0 ? 0 : Mathf.PingPong(Time.time / SpeedReduction, MovingDistanceZ)) * Vector3.forward * (NegativeZ ? -1 : 1);
+            + (MovingDistanceX == 0 ? 0 : Mathf.PingPong(_Timer / SpeedReduction, MovingDistanceX)) * Vector3.right * (NegativeX ? -1 : 1)
+            + (MovingDistanceY == 0 ? 0 : Mathf.PingPong(_Timer / SpeedReduction, MovingDistanceY)) * Vector3.up * (NegativeY ? -1 : 1)
+            + (MovingDistanceZ == 0 ? 0 : Mathf.PingPong(_Timer / SpeedReduction, MovingDistanceZ)) * Vector3.forward * (NegativeZ ? -1 : 1);
     }
 }

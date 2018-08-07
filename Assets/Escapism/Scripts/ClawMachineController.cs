@@ -10,12 +10,10 @@ public class ClawMachineController : MonoBehaviour {
     private int _TimesButtonPressed = -1;
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -37,6 +35,8 @@ public class ClawMachineController : MonoBehaviour {
         switch (_TimesButtonPressed)
         {
             case 0:
+                Claw.GetComponent<PlatformScript>().enabled = false;
+
                 FrontBackMover.GetComponent<PlatformScript>().enabled = true;
                 FrontBackMover.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
                 break;
@@ -50,13 +50,17 @@ public class ClawMachineController : MonoBehaviour {
             case 2:
                 LeftRightMover.GetComponent<PlatformScript>().enabled = false;
 
-                FrontBackMover.GetComponent<PlatformScript>().enabled = true;
-                FrontBackMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
+                Claw.GetComponent<PlatformScript>().enabled = true;
+                Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
 
-                LeftRightMover.GetComponent<PlatformScript>().enabled = true;
-                LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
 
-                //DropClaw();
+                //FrontBackMover.GetComponent<PlatformScript>().enabled = true;
+                //FrontBackMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
+
+                //LeftRightMover.GetComponent<PlatformScript>().enabled = true;
+                //LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
+
+                Invoke("ResetMachine", Claw.GetComponent<PlatformScript>().MovingDistanceY * 2);
                 break;
 
             default:
@@ -64,14 +68,9 @@ public class ClawMachineController : MonoBehaviour {
         }
     }
 
-    private IEnumerable DropClaw()
+    private void ResetMachine()
     {
-        Claw.GetComponent<PlatformScript>().enabled = true;
-        yield return new WaitForSecondsRealtime(1.0f);
-        Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
-        yield return new WaitForSecondsRealtime(1.0f);
-
-        Claw.GetComponent<PlatformScript>().enabled = false;
+        Claw.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
 
         FrontBackMover.GetComponent<PlatformScript>().enabled = true;
         FrontBackMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
