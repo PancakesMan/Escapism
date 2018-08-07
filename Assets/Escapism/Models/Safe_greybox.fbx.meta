@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 15f6cef627533d6408c516130bb59ba9
+timeCreated: 1533605120
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Coin_greybox6
+    100002: group11
+    100004: pCube40
+    100006: pCube41
+    100008: pCube42
+    100010: pCube56
+    100012: pCube86
+    100014: safe_box
+    100016: safe_button_0
+    100018: safe_button_1
+    100020: safe_button_2
+    100022: safe_button_3
+    100024: safe_button_4
+    100026: safe_button_5
+    100028: safe_button_6
+    100030: safe_button_7
+    100032: safe_button_8
+    100034: safe_button_9
+    100036: safe_button_cross
+    100038: safe_button_tick
+    100040: safe_door
+    100042: //RootNode
+    100044: safe_handle
+    100046: transform12
+    100048: transform13
+    100050: transform14
+    100052: transform15
+    100054: transform16
+    100056: transform17
+    400000: Coin_greybox6
+    400002: group11
+    400004: pCube40
+    400006: pCube41
+    400008: pCube42
+    400010: pCube56
+    400012: pCube86
+    400014: safe_box
+    400016: safe_button_0
+    400018: safe_button_1
+    400020: safe_button_2
+    400022: safe_button_3
+    400024: safe_button_4
+    400026: safe_button_5
+    400028: safe_button_6
+    400030: safe_button_7
+    400032: safe_button_8
+    400034: safe_button_9
+    400036: safe_button_cross
+    400038: safe_button_tick
+    400040: safe_door
+    400042: //RootNode
+    400044: safe_handle
+    400046: transform12
+    400048: transform13
+    400050: transform14
+    400052: transform15
+    400054: transform16
+    400056: transform17
+    2100000: lambert1
+    2100002: keypad_numbers
+    2300000: safe_box
+    2300002: safe_button_0
+    2300004: safe_button_1
+    2300006: safe_button_2
+    2300008: safe_button_3
+    2300010: safe_button_4
+    2300012: safe_button_5
+    2300014: safe_button_6
+    2300016: safe_button_7
+    2300018: safe_button_8
+    2300020: safe_button_9
+    2300022: safe_button_cross
+    2300024: safe_button_tick
+    2300026: safe_door
+    2300028: safe_handle
+    3300000: safe_box
+    3300002: safe_button_0
+    3300004: safe_button_1
+    3300006: safe_button_2
+    3300008: safe_button_3
+    3300010: safe_button_4
+    3300012: safe_button_5
+    3300014: safe_button_6
+    3300016: safe_button_7
+    3300018: safe_button_8
+    3300020: safe_button_9
+    3300022: safe_button_cross
+    3300024: safe_button_tick
+    3300026: safe_door
+    3300028: safe_handle
+    4300000: safe_box
+    4300002: safe_button_1
+    4300004: safe_button_2
+    4300006: safe_button_3
+    4300008: safe_button_6
+    4300010: safe_button_4
+    4300012: safe_button_5
+    4300014: safe_button_9
+    4300016: safe_button_7
+    4300018: safe_button_8
+    4300020: safe_button_cross
+    4300022: safe_button_tick
+    4300024: safe_button_0
+    4300026: safe_door
+    4300028: safe_handle
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
