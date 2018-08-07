@@ -8,6 +8,8 @@ public class ClawMachineController : MonoBehaviour {
     public GameObject FrontBackMover, LeftRightMover, Claw;
 
     private int _TimesButtonPressed = -1;
+    private bool _Resetting = false;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -18,7 +20,7 @@ public class ClawMachineController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (Active)
+        if (Active && !_Resetting)
         {
             if (other.CompareTag("Button"))
             {
@@ -70,6 +72,8 @@ public class ClawMachineController : MonoBehaviour {
 
     private void ResetMachine()
     {
+        _Resetting = true;
+
         Claw.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
 
         FrontBackMover.GetComponent<PlatformScript>().enabled = true;
@@ -77,5 +81,12 @@ public class ClawMachineController : MonoBehaviour {
 
         LeftRightMover.GetComponent<PlatformScript>().enabled = true;
         LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
+
+        Invoke("FinishResetting", 3.0f);
+    }
+
+    private void FinishResetting()
+    {
+        _Resetting = false;
     }
 }
