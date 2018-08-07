@@ -435,6 +435,17 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b6577631fb2b94b45a775765a07b1dd7, type: 3}
+--- !u!114 &16463711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 16463698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &23388649
 Prefab:
   m_ObjectHideFlags: 0
@@ -1805,27 +1816,27 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 6380903c0c5c36449873e6376aee1f76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9221914
+      value: -1.852
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6380903c0c5c36449873e6376aee1f76, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0037983195
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6380903c0c5c36449873e6376aee1f76, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.6297457
+      value: -0.777
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6380903c0c5c36449873e6376aee1f76, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6380903c0c5c36449873e6376aee1f76, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6380903c0c5c36449873e6376aee1f76, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6380903c0c5c36449873e6376aee1f76, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5642,27 +5653,27 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: b6577631fb2b94b45a775765a07b1dd7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9378155
+      value: -2.626
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b6577631fb2b94b45a775765a07b1dd7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.010231526
+      value: 1.092
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b6577631fb2b94b45a775765a07b1dd7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.89361495
+      value: 1.831
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b6577631fb2b94b45a775765a07b1dd7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b6577631fb2b94b45a775765a07b1dd7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b6577631fb2b94b45a775765a07b1dd7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b6577631fb2b94b45a775765a07b1dd7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8033,6 +8044,17 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6352fd6ddcff494448bbaa04ed2ed6ac, type: 3}
+--- !u!114 &828490871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828490858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &836176959 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 800e7066d76ef454d8ae1b782e26ca03, type: 3}
@@ -14232,27 +14254,27 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 6352fd6ddcff494448bbaa04ed2ed6ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1417394
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6352fd6ddcff494448bbaa04ed2ed6ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.006004085
+      value: 0.665
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6352fd6ddcff494448bbaa04ed2ed6ac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7402986
+      value: 1.775
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6352fd6ddcff494448bbaa04ed2ed6ac, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6352fd6ddcff494448bbaa04ed2ed6ac, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6352fd6ddcff494448bbaa04ed2ed6ac, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6352fd6ddcff494448bbaa04ed2ed6ac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16865,6 +16887,17 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6380903c0c5c36449873e6376aee1f76, type: 3}
+--- !u!114 &1723612719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1723612706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1736072196
 GameObject:
   m_ObjectHideFlags: 0
