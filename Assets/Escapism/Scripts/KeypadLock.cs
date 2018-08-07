@@ -8,7 +8,7 @@ public class KeypadLock : MonoBehaviour {
 
     public GameObject[] Code;
 
-    private GameObject[] _CurrentCode;
+    public GameObject[] _CurrentCode;
     private int _Index = 0;
 
 	// Use this for initialization
@@ -29,7 +29,7 @@ public class KeypadLock : MonoBehaviour {
             if (other.name == "O")
             {
                 for (int i = 0; i < _CurrentCode.Length; i++)
-                    if (_CurrentCode[i] != Code[i]) return;
+                    if (_CurrentCode[i].name != Code[i].name) return;
 
                 // If the code is correct
                 GetComponent<Lockable>().Locked = false;
