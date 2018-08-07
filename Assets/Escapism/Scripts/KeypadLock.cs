@@ -33,6 +33,7 @@ public class KeypadLock : MonoBehaviour {
 
                 // If the code is correct
                 GetComponent<Lockable>().Locked = false;
+                other.transform.parent.parent = other.transform.parent.parent.parent;
             }
             else if (other.name == "X")
             {
