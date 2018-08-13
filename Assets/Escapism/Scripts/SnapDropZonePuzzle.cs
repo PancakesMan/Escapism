@@ -24,7 +24,7 @@ public class SnapDropZonePuzzle : MonoBehaviour {
 	void Start () {
 		foreach (DropAreaObjectConnector connector in List)
         {
-            connector.SnapDropZone.ObjectEnteredSnapDropZone += ObjectSnappedHandler;
+            connector.SnapDropZone.ObjectSnappedToDropZone += ObjectSnappedHandler;
         }
 	}
 	
