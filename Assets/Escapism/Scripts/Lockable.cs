@@ -11,7 +11,7 @@ public class Lockable : MonoBehaviour {
     {
         if (Locked)
         {
-            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             foreach (VRTK.Controllables.PhysicsBased.VRTK_PhysicsSlider drawer in DisabledObjectsWhenUnlocked)
                 drawer.enabled = true;
         }
@@ -21,5 +21,15 @@ public class Lockable : MonoBehaviour {
             foreach (VRTK.Controllables.PhysicsBased.VRTK_PhysicsSlider drawer in DisabledObjectsWhenUnlocked)
                 drawer.enabled = false;
         }
+    }
+
+    public void Lock()
+    {
+        Locked = true;
+    }
+
+    public void Unlock()
+    {
+        Locked = false;
     }
 }
