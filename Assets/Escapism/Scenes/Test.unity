@@ -7984,7 +7984,7 @@ MonoBehaviour:
     Object: {fileID: 1723612706}
   - SnapDropZone: {fileID: 1202798864}
     Object: {fileID: 16463698}
-  OnPuzzleCompleted:
+  OnPuzzleCompletedCorrectly:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1555609936}
@@ -7998,8 +7998,46 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: SnapDropZonePuzzle+PuzzleCompletedEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    m_TypeName: SnapDropZonePuzzle+PuzzleCompletedCorrectlyEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnPuzzleCompletedIncorrectly:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1742005558}
+        m_MethodName: ForceUnsnap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 996181980}
+        m_MethodName: ForceUnsnap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1202798864}
+        m_MethodName: ForceUnsnap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: SnapDropZonePuzzle+PuzzleCompletedIncorrectlyEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &871974219
 GameObject:
   m_ObjectHideFlags: 0
@@ -11472,7 +11510,7 @@ MonoBehaviour:
   List:
   - SnapDropZone: {fileID: 1252368911}
     Object: {fileID: 634265984}
-  OnPuzzleCompleted:
+  OnPuzzleCompletedCorrectly:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1252368911}
@@ -11486,8 +11524,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: SnapDropZonePuzzle+PuzzleCompletedEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    m_TypeName: SnapDropZonePuzzle+PuzzleCompletedCorrectlyEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnPuzzleCompletedIncorrectly:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SnapDropZonePuzzle+PuzzleCompletedIncorrectlyEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &1252368911 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,

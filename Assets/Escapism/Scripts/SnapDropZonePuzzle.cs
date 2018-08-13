@@ -16,9 +16,13 @@ public class SnapDropZonePuzzle : MonoBehaviour {
     public DropAreaObjectConnector[] List;
 
     [System.Serializable]
-    public class PuzzleCompletedEvent : UnityEvent { }
+    public class PuzzleCompletedCorrectlyEvent : UnityEvent { }
 
-    public PuzzleCompletedEvent OnPuzzleCompleted;
+    [System.Serializable]
+    public class PuzzleCompletedIncorrectlyEvent : UnityEvent { }
+
+    public PuzzleCompletedCorrectlyEvent OnPuzzleCompletedCorrectly;
+    public PuzzleCompletedIncorrectlyEvent OnPuzzleCompletedIncorrectly;
 
 	// Use this for initialization
 	void Start () {
@@ -34,11 +38,27 @@ public class SnapDropZonePuzzle : MonoBehaviour {
 	}
 
     void ObjectSnappedHandler(object sender, SnapDropZoneEventArgs e) {
-        foreach (DropAreaObjectConnector connector in List)
-            if (!connector.SnapDropZone.GetCurrentSnappedObject()||
-                connector.SnapDropZone.GetCurrentSnappedObject().name != connector.Object.name)
-                return;
+        int correctCount = 0;
 
-        OnPuzzleCompleted.Invoke();
+        foreach (DropAreaObjectConnector connector in List)
+        {
+            // If a snap zone has no object, puzzle can't be complete
+            if (!connector.SnapDropZone.GetCurrentSnappedObject()) return;
+
+            if (connector.SnapDropZone.GetCurrentSnappedObject().name == connector.Object.name)
+                correctCount++;
+        }
+
+        if (correctCount == List.Length)
+        {
+            OnPuzzleCompletedCorrectly.Invoke();
+            foreach (DropAreaObjectConnector connector in List)
+            {
+                connector.SnapDropZone.GetCurrentSnappedObject().GetComponent<VRTK_InteractableObject>().isGrabbable = false;
+            }
+            enabled = false;
+        }
+        else
+            OnPuzzleCompletedIncorrectly.Invoke();
     }
 }
