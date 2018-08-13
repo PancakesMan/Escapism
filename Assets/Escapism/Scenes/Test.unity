@@ -4777,6 +4777,7 @@ GameObject:
   - component: {fileID: 599042406}
   - component: {fileID: 599042405}
   - component: {fileID: 599042404}
+  - component: {fileID: 599042407}
   m_Layer: 0
   m_Name: Gear Wall
   m_TagString: Untagged
@@ -4853,6 +4854,36 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 599042402}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &599042407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 599042402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80493b478723d0f40a5495f445baf9e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  List:
+  - SnapDropZone: {fileID: 1742005558}
+    Object: {fileID: 1723612706}
+  OnPuzzleCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1742005558}
+        m_MethodName: ForceUnsnap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: SnapDropZonePuzzle+PuzzleCompletedEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!4 &603318456 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -16100,6 +16131,12 @@ MonoBehaviour:
   checkType: 1
   identifiers:
   - Gear
+--- !u!114 &1742005558 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1723312624}
+  m_Script: {fileID: 11500000, guid: aa31935730602684ca098655260a7c33, type: 3}
 --- !u!1 &1752595738
 GameObject:
   m_ObjectHideFlags: 0
