@@ -35,7 +35,8 @@ public class SnapDropZonePuzzle : MonoBehaviour {
 
     void ObjectSnappedHandler(object sender, SnapDropZoneEventArgs e) {
         foreach (DropAreaObjectConnector connector in List)
-            if (connector.SnapDropZone.GetCurrentSnappedObject().name != connector.Object.name)
+            if (!connector.SnapDropZone.GetCurrentSnappedObject()||
+                connector.SnapDropZone.GetCurrentSnappedObject().name != connector.Object.name)
                 return;
 
         OnPuzzleCompleted.Invoke();
