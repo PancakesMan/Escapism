@@ -86,5 +86,18 @@ public class ClawMachineController : MonoBehaviour {
     private void FinishResetting()
     {
         _Resetting = false;
+        VRTK.VRTK_SnapDropZone claw = transform.parent.GetComponentInChildren<VRTK.VRTK_SnapDropZone>();
+        if (claw)
+        {
+            Debug.Log("Claw is not null");
+            VRTK.VRTK_InteractableObject obj = claw.GetCurrentSnappedInteractableObject();
+            if (obj)
+            {
+                Debug.Log("Obj is not null");
+                obj.isGrabbable = true;
+                obj.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            }
+            claw.ForceUnsnap();
+        }
     }
 }
