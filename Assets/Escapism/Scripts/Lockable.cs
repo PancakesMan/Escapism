@@ -1,12 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum LockType { Rigidbody, Interactable }
 
 public class Lockable : MonoBehaviour {
 
+    [System.Serializable]
+    public class UnlockedEvent : UnityEvent { }
+
+    [System.Serializable]
+    public class LockedEvent : UnityEvent { }
+
+    public LockedEvent OnLocked;
+    public UnlockedEvent OnUnlocked;
+
+
     public LockType Type = LockType.Rigidbody;
+
     public bool Locked = false;
 
     public VRTK.Controllables.PhysicsBased.VRTK_PhysicsSlider[] DisabledObjectsWhenUnlocked;
@@ -50,10 +62,12 @@ public class Lockable : MonoBehaviour {
     public void Lock()
     {
         Locked = true;
+        OnLocked.Invoke();
     }
 
     public void Unlock()
     {
         Locked = false;
+        OnUnlocked.Invoke();
     }
 }
