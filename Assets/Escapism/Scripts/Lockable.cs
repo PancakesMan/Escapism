@@ -20,7 +20,12 @@ public class Lockable : MonoBehaviour {
     public LockedEvent OnLocked;
     public UnlockedEvent OnUnlocked;
 
-    private void Update()
+    private void Start()
+    {
+        LockStateChangedHandler();
+    }
+
+    void LockStateChangedHandler()
     {
         if (Locked)
         {
@@ -31,7 +36,7 @@ public class Lockable : MonoBehaviour {
                     break;
                 case LockType.Interactable:
                     GetComponent<VRTK.VRTK_InteractableObject>().isGrabbable = false;
-                    GetComponent<Rigidbody>().isKinematic = true;
+                    //GetComponent<Rigidbody>().isKinematic = true;
                     break;
                 default:
                     break;
@@ -48,7 +53,7 @@ public class Lockable : MonoBehaviour {
                     break;
                 case LockType.Interactable:
                     GetComponent<VRTK.VRTK_InteractableObject>().isGrabbable = true;
-                    GetComponent<Rigidbody>().isKinematic = false;
+                    //GetComponent<Rigidbody>().isKinematic = false;
                     break;
                 default:
                     break;
@@ -61,12 +66,14 @@ public class Lockable : MonoBehaviour {
     public void Lock()
     {
         Locked = true;
+        LockStateChangedHandler();
         OnLocked.Invoke();
     }
 
     public void Unlock()
     {
         Locked = false;
+        LockStateChangedHandler();
         OnUnlocked.Invoke();
     }
 }
