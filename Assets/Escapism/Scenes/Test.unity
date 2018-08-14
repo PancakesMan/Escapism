@@ -5678,6 +5678,7 @@ GameObject:
   - component: {fileID: 634265985}
   - component: {fileID: 634265995}
   - component: {fileID: 634265996}
+  - component: {fileID: 634265992}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -5830,6 +5831,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &634265992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634265984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af970ac4acf794740817c894dd7b3ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 1
+  Locked: 1
+  DisabledObjectsWhenUnlocked: []
+  OnLocked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Lockable+LockedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnUnlocked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Lockable+UnlockedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!33 &634265993
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14492,6 +14517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af970ac4acf794740817c894dd7b3ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   Locked: 1
   DisabledObjectsWhenUnlocked:
   - {fileID: 1176208851}
@@ -14506,6 +14532,27 @@ MonoBehaviour:
   - {fileID: 1698289274}
   - {fileID: 871974221}
   - {fileID: 1895664471}
+  OnLocked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Lockable+LockedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnUnlocked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 634265992}
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Lockable+UnlockedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!54 &1502428441
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15002,8 +15049,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af970ac4acf794740817c894dd7b3ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   Locked: 1
   DisabledObjectsWhenUnlocked: []
+  OnLocked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Lockable+LockedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnUnlocked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Lockable+UnlockedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1001 &1559664327
 Prefab:
   m_ObjectHideFlags: 0

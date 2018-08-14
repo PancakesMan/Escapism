@@ -32,7 +32,7 @@ public class KeypadLock : MonoBehaviour {
                     if (_CurrentCode[i].name != Code[i].name) return;
 
                 // If the code is correct
-                Lock.Locked = false;
+                Lock.Unlock();
                 other.transform.parent.parent = other.transform.parent.parent.parent;
             }
             else if (other.name == "X")
