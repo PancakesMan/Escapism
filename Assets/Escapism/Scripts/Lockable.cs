@@ -14,7 +14,10 @@ public class Lockable : MonoBehaviour {
     public class LockedEvent : UnityEvent { }
 
     public LockType Type = LockType.Rigidbody;
+
     public bool Locked = false;
+    private bool _Locked;
+
     public VRTK.Controllables.PhysicsBased.VRTK_PhysicsSlider[] DisabledObjectsWhenUnlocked;
 
     public LockedEvent OnLocked;
@@ -22,12 +25,13 @@ public class Lockable : MonoBehaviour {
 
     private void Start()
     {
+        _Locked = Locked;
         LockStateChangedHandler();
     }
 
     void LockStateChangedHandler()
     {
-        if (Locked)
+        if (_Locked)
         {
             switch (Type)
             {
@@ -36,7 +40,7 @@ public class Lockable : MonoBehaviour {
                     break;
                 case LockType.Interactable:
                     GetComponent<VRTK.VRTK_InteractableObject>().isGrabbable = false;
-                    //GetComponent<Rigidbody>().isKinematic = true;
+                    GetComponent<Rigidbody>().isKinematic = true;
                     break;
                 default:
                     break;
@@ -53,7 +57,7 @@ public class Lockable : MonoBehaviour {
                     break;
                 case LockType.Interactable:
                     GetComponent<VRTK.VRTK_InteractableObject>().isGrabbable = true;
-                    //GetComponent<Rigidbody>().isKinematic = false;
+                    GetComponent<Rigidbody>().isKinematic = false;
                     break;
                 default:
                     break;
@@ -65,14 +69,14 @@ public class Lockable : MonoBehaviour {
 
     public void Lock()
     {
-        Locked = true;
+        _Locked = true;
         LockStateChangedHandler();
         OnLocked.Invoke();
     }
 
     public void Unlock()
     {
-        Locked = false;
+        _Locked = false;
         LockStateChangedHandler();
         OnUnlocked.Invoke();
     }
