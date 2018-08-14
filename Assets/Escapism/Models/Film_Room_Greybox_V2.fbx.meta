@@ -1,0 +1,605 @@
+fileFormatVersion: 2
+guid: b2e86b0fa0c42244f931b3f8fda2a23c
+timeCreated: 1534227368
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: box_1
+    100002: box_2
+    100004: box_3
+    100006: box_4
+    100008: box_5
+    100010: box_6
+    100012: box_open
+    100014: cam
+    100016: camera
+    100018: cinema_back_wall
+    100020: cinema_chair_1
+    100022: cinema_chair_1 1
+    100024: cinema_chair_1 2
+    100026: cinema_chair_1 3
+    100028: cinema_chair_10
+    100030: cinema_chair_2
+    100032: cinema_chair_2 1
+    100034: cinema_chair_2 2
+    100036: cinema_chair_2 3
+    100038: cinema_chair_3
+    100040: cinema_chair_3 1
+    100042: cinema_chair_3 2
+    100044: cinema_chair_3 3
+    100046: cinema_chair_6
+    100048: cinema_chair_6 1
+    100050: cinema_chair_6 2
+    100052: cinema_chair_6 3
+    100054: cinema_chair_7
+    100056: cinema_chair_7 1
+    100058: cinema_chair_7 2
+    100060: cinema_chair_7 3
+    100062: cinema_chair_8
+    100064: cinema_chair_8 1
+    100066: cinema_chair_8 2
+    100068: cinema_chair_8 3
+    100070: cinema_chair_9
+    100072: cinema_chair_9 1
+    100074: cinema_chair_9 2
+    100076: cinema_chair_9 3
+    100078: cinema_floor
+    100080: control_box
+    100082: desk
+    100084: door_1
+    100086: door_1 1
+    100088: door_1 2
+    100090: door_2
+    100092: door_frame
+    100094: door_frame1
+    100096: door_sign
+    100098: door_sign 1
+    100100: doorway_1
+    100102: file_cabinet
+    100104: film_reel
+    100106: film_reel1
+    100108: //RootNode
+    100110: floor_1
+    100112: floor_2
+    100114: handle_1
+    100116: handle_2
+    100118: handle_bar
+    100120: hatch
+    100122: large_cabinet
+    100124: large_cabinet_door
+    100126: large_film_shelf
+    100128: large_film_shelf1
+    100130: large_single_shelf_1
+    100132: large_single_shelf_2
+    100134: large_wall_1
+    100136: leg1
+    100138: leg2
+    100140: light_switch
+    100142: lock
+    100144: pCube10
+    100146: pCube11
+    100148: pCube12
+    100150: pCube13
+    100152: pCube14
+    100154: pCube15
+    100156: pCube16
+    100158: pCube17
+    100160: pCube18
+    100162: pCube19
+    100164: pCube20
+    100166: pCube21
+    100168: pCube23
+    100170: pCube24
+    100172: pCube4
+    100174: pCube5
+    100176: pCube6
+    100178: pCube7
+    100180: pCube8
+    100182: pCube9
+    100184: pCylinder1
+    100186: player
+    100188: row_of_chairs_1
+    100190: row_of_chairs_2
+    100192: row_of_chairs_3
+    100194: row_of_chairs_4
+    100196: shelf_large
+    100198: small_shelf
+    100200: stackof_film_reels_1
+    100202: trash_bin
+    100204: trash_bin1
+    100206: wall_1
+    100208: wall_2
+    100210: wall_3
+    100212: wall_4
+    100214: wall_5
+    100216: wall_6
+    400000: box_1
+    400002: box_2
+    400004: box_3
+    400006: box_4
+    400008: box_5
+    400010: box_6
+    400012: box_open
+    400014: cam
+    400016: camera
+    400018: cinema_back_wall
+    400020: cinema_chair_1
+    400022: cinema_chair_1 1
+    400024: cinema_chair_1 2
+    400026: cinema_chair_1 3
+    400028: cinema_chair_10
+    400030: cinema_chair_2
+    400032: cinema_chair_2 1
+    400034: cinema_chair_2 2
+    400036: cinema_chair_2 3
+    400038: cinema_chair_3
+    400040: cinema_chair_3 1
+    400042: cinema_chair_3 2
+    400044: cinema_chair_3 3
+    400046: cinema_chair_6
+    400048: cinema_chair_6 1
+    400050: cinema_chair_6 2
+    400052: cinema_chair_6 3
+    400054: cinema_chair_7
+    400056: cinema_chair_7 1
+    400058: cinema_chair_7 2
+    400060: cinema_chair_7 3
+    400062: cinema_chair_8
+    400064: cinema_chair_8 1
+    400066: cinema_chair_8 2
+    400068: cinema_chair_8 3
+    400070: cinema_chair_9
+    400072: cinema_chair_9 1
+    400074: cinema_chair_9 2
+    400076: cinema_chair_9 3
+    400078: cinema_floor
+    400080: control_box
+    400082: desk
+    400084: door_1
+    400086: door_1 1
+    400088: door_1 2
+    400090: door_2
+    400092: door_frame
+    400094: door_frame1
+    400096: door_sign
+    400098: door_sign 1
+    400100: doorway_1
+    400102: file_cabinet
+    400104: film_reel
+    400106: film_reel1
+    400108: //RootNode
+    400110: floor_1
+    400112: floor_2
+    400114: handle_1
+    400116: handle_2
+    400118: handle_bar
+    400120: hatch
+    400122: large_cabinet
+    400124: large_cabinet_door
+    400126: large_film_shelf
+    400128: large_film_shelf1
+    400130: large_single_shelf_1
+    400132: large_single_shelf_2
+    400134: large_wall_1
+    400136: leg1
+    400138: leg2
+    400140: light_switch
+    400142: lock
+    400144: pCube10
+    400146: pCube11
+    400148: pCube12
+    400150: pCube13
+    400152: pCube14
+    400154: pCube15
+    400156: pCube16
+    400158: pCube17
+    400160: pCube18
+    400162: pCube19
+    400164: pCube20
+    400166: pCube21
+    400168: pCube23
+    400170: pCube24
+    400172: pCube4
+    400174: pCube5
+    400176: pCube6
+    400178: pCube7
+    400180: pCube8
+    400182: pCube9
+    400184: pCylinder1
+    400186: player
+    400188: row_of_chairs_1
+    400190: row_of_chairs_2
+    400192: row_of_chairs_3
+    400194: row_of_chairs_4
+    400196: shelf_large
+    400198: small_shelf
+    400200: stackof_film_reels_1
+    400202: trash_bin
+    400204: trash_bin1
+    400206: wall_1
+    400208: wall_2
+    400210: wall_3
+    400212: wall_4
+    400214: wall_5
+    400216: wall_6
+    2100000: lambert2
+    2100002: lambert1
+    2300000: box_1
+    2300002: box_2
+    2300004: box_3
+    2300006: box_4
+    2300008: box_5
+    2300010: box_6
+    2300012: box_open
+    2300014: cam
+    2300016: cinema_back_wall
+    2300018: cinema_chair_1
+    2300020: cinema_chair_1 1
+    2300022: cinema_chair_1 2
+    2300024: cinema_chair_1 3
+    2300026: cinema_chair_10
+    2300028: cinema_chair_2
+    2300030: cinema_chair_2 1
+    2300032: cinema_chair_2 2
+    2300034: cinema_chair_2 3
+    2300036: cinema_chair_3
+    2300038: cinema_chair_3 1
+    2300040: cinema_chair_3 2
+    2300042: cinema_chair_3 3
+    2300044: cinema_chair_6
+    2300046: cinema_chair_6 1
+    2300048: cinema_chair_6 2
+    2300050: cinema_chair_6 3
+    2300052: cinema_chair_7
+    2300054: cinema_chair_7 1
+    2300056: cinema_chair_7 2
+    2300058: cinema_chair_7 3
+    2300060: cinema_chair_8
+    2300062: cinema_chair_8 1
+    2300064: cinema_chair_8 2
+    2300066: cinema_chair_8 3
+    2300068: cinema_chair_9
+    2300070: cinema_chair_9 1
+    2300072: cinema_chair_9 2
+    2300074: cinema_chair_9 3
+    2300076: cinema_floor
+    2300078: control_box
+    2300080: desk
+    2300082: door_1 1
+    2300084: door_1 2
+    2300086: door_frame
+    2300088: door_frame1
+    2300090: door_sign
+    2300092: door_sign 1
+    2300094: doorway_1
+    2300096: file_cabinet
+    2300098: film_reel
+    2300100: film_reel1
+    2300102: floor_1
+    2300104: floor_2
+    2300106: handle_1
+    2300108: handle_2
+    2300110: handle_bar
+    2300112: hatch
+    2300114: large_cabinet
+    2300116: large_cabinet_door
+    2300118: large_film_shelf
+    2300120: large_film_shelf1
+    2300122: large_single_shelf_1
+    2300124: large_single_shelf_2
+    2300126: large_wall_1
+    2300128: leg1
+    2300130: leg2
+    2300132: light_switch
+    2300134: lock
+    2300136: pCube10
+    2300138: pCube12
+    2300140: pCube13
+    2300142: pCube14
+    2300144: pCube15
+    2300146: pCube16
+    2300148: pCube17
+    2300150: pCube18
+    2300152: pCube19
+    2300154: pCube20
+    2300156: pCube21
+    2300158: pCube23
+    2300160: pCube24
+    2300162: pCube4
+    2300164: pCube5
+    2300166: pCube6
+    2300168: pCube7
+    2300170: pCube8
+    2300172: pCube9
+    2300174: pCylinder1
+    2300176: player
+    2300178: small_shelf
+    2300180: stackof_film_reels_1
+    2300182: trash_bin
+    2300184: trash_bin1
+    2300186: wall_1
+    2300188: wall_2
+    2300190: wall_3
+    2300192: wall_4
+    2300194: wall_5
+    2300196: wall_6
+    3300000: box_1
+    3300002: box_2
+    3300004: box_3
+    3300006: box_4
+    3300008: box_5
+    3300010: box_6
+    3300012: box_open
+    3300014: cam
+    3300016: cinema_back_wall
+    3300018: cinema_chair_1
+    3300020: cinema_chair_1 1
+    3300022: cinema_chair_1 2
+    3300024: cinema_chair_1 3
+    3300026: cinema_chair_10
+    3300028: cinema_chair_2
+    3300030: cinema_chair_2 1
+    3300032: cinema_chair_2 2
+    3300034: cinema_chair_2 3
+    3300036: cinema_chair_3
+    3300038: cinema_chair_3 1
+    3300040: cinema_chair_3 2
+    3300042: cinema_chair_3 3
+    3300044: cinema_chair_6
+    3300046: cinema_chair_6 1
+    3300048: cinema_chair_6 2
+    3300050: cinema_chair_6 3
+    3300052: cinema_chair_7
+    3300054: cinema_chair_7 1
+    3300056: cinema_chair_7 2
+    3300058: cinema_chair_7 3
+    3300060: cinema_chair_8
+    3300062: cinema_chair_8 1
+    3300064: cinema_chair_8 2
+    3300066: cinema_chair_8 3
+    3300068: cinema_chair_9
+    3300070: cinema_chair_9 1
+    3300072: cinema_chair_9 2
+    3300074: cinema_chair_9 3
+    3300076: cinema_floor
+    3300078: control_box
+    3300080: desk
+    3300082: door_1 1
+    3300084: door_1 2
+    3300086: door_frame
+    3300088: door_frame1
+    3300090: door_sign
+    3300092: door_sign 1
+    3300094: doorway_1
+    3300096: file_cabinet
+    3300098: film_reel
+    3300100: film_reel1
+    3300102: floor_1
+    3300104: floor_2
+    3300106: handle_1
+    3300108: handle_2
+    3300110: handle_bar
+    3300112: hatch
+    3300114: large_cabinet
+    3300116: large_cabinet_door
+    3300118: large_film_shelf
+    3300120: large_film_shelf1
+    3300122: large_single_shelf_1
+    3300124: large_single_shelf_2
+    3300126: large_wall_1
+    3300128: leg1
+    3300130: leg2
+    3300132: light_switch
+    3300134: lock
+    3300136: pCube10
+    3300138: pCube12
+    3300140: pCube13
+    3300142: pCube14
+    3300144: pCube15
+    3300146: pCube16
+    3300148: pCube17
+    3300150: pCube18
+    3300152: pCube19
+    3300154: pCube20
+    3300156: pCube21
+    3300158: pCube23
+    3300160: pCube24
+    3300162: pCube4
+    3300164: pCube5
+    3300166: pCube6
+    3300168: pCube7
+    3300170: pCube8
+    3300172: pCube9
+    3300174: pCylinder1
+    3300176: player
+    3300178: small_shelf
+    3300180: stackof_film_reels_1
+    3300182: trash_bin
+    3300184: trash_bin1
+    3300186: wall_1
+    3300188: wall_2
+    3300190: wall_3
+    3300192: wall_4
+    3300194: wall_5
+    3300196: wall_6
+    4300000: player
+    4300002: floor_1
+    4300004: wall_1
+    4300006: doorway_1
+    4300008: wall_2
+    4300010: wall_3
+    4300012: wall_4
+    4300014: wall_5
+    4300016: floor_2
+    4300018: wall_6
+    4300020: control_box
+    4300022: desk
+    4300024: file_cabinet
+    4300026: pCube4
+    4300028: pCube5
+    4300030: pCube6
+    4300032: pCube7
+    4300034: pCube8
+    4300036: pCube9
+    4300038: pCube10
+    4300040: box_1
+    4300042: box_2
+    4300044: film_reel
+    4300046: cam
+    4300048: hatch
+    4300050: leg1
+    4300052: leg2
+    4300054: large_cabinet_door
+    4300056: large_cabinet
+    4300058: box_3
+    4300060: large_film_shelf
+    4300062: large_film_shelf1
+    4300064: large_single_shelf_2
+    4300066: box_open
+    4300068: film_reel1
+    4300070: trash_bin
+    4300072: box_4
+    4300074: box_5
+    4300076: box_6
+    4300078: stackof_film_reels_1
+    4300080: light_switch
+    4300082: large_single_shelf_1
+    4300084: door_frame
+    4300086: door_1
+    4300088: lock
+    4300090: handle_1
+    4300092: handle_2
+    4300094: door_sign
+    4300096: small_shelf
+    4300098: pCube12
+    4300100: trash_bin1
+    4300102: door_frame1
+    4300104: pCube13
+    4300106: pCube14
+    4300108: handle_bar
+    4300110: door_1
+    4300112: door_sign
+    4300114: pCube15
+    4300116: pCube16
+    4300118: pCube17
+    4300120: pCube18
+    4300122: pCube19
+    4300124: pCube20
+    4300126: pCube21
+    4300128: cinema_floor
+    4300130: pCube23
+    4300132: cinema_chair_10
+    4300134: cinema_back_wall
+    4300136: large_wall_1
+    4300138: cinema_chair_1
+    4300140: cinema_chair_2
+    4300142: cinema_chair_3
+    4300144: cinema_chair_6
+    4300146: cinema_chair_7
+    4300148: cinema_chair_8
+    4300150: cinema_chair_9
+    4300152: cinema_chair_1
+    4300154: cinema_chair_2
+    4300156: cinema_chair_3
+    4300158: cinema_chair_6
+    4300160: cinema_chair_7
+    4300162: cinema_chair_8
+    4300164: cinema_chair_9
+    4300166: cinema_chair_1
+    4300168: cinema_chair_2
+    4300170: cinema_chair_3
+    4300172: cinema_chair_6
+    4300174: cinema_chair_7
+    4300176: cinema_chair_8
+    4300178: cinema_chair_9
+    4300180: cinema_chair_1
+    4300182: cinema_chair_2
+    4300184: cinema_chair_3
+    4300186: cinema_chair_6
+    4300188: cinema_chair_7
+    4300190: cinema_chair_8
+    4300192: cinema_chair_9
+    4300194: pCube24
+    4300196: pCylinder1
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

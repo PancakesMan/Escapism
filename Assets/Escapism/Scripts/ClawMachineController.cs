@@ -57,6 +57,7 @@ public class ClawMachineController : MonoBehaviour {
             case 2:
                 LeftRightMover.GetComponent<PlatformScript>().enabled = false;
 
+                Claw.GetComponent<Collider>().enabled = true;
                 Claw.GetComponent<PlatformScript>().enabled = true;
                 Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
 
@@ -86,5 +87,20 @@ public class ClawMachineController : MonoBehaviour {
     private void FinishResetting()
     {
         _Resetting = false;
+        VRTK.VRTK_SnapDropZone claw = transform.parent.GetComponentInChildren<VRTK.VRTK_SnapDropZone>();
+        if (claw)
+        {
+            Debug.Log("Claw is not null");
+            VRTK.VRTK_InteractableObject obj = claw.GetCurrentSnappedInteractableObject();
+            if (obj)
+            {
+                Debug.Log("Obj is not null");
+                Claw.GetComponent<Collider>().enabled = false;
+                claw.ForceUnsnap();
+
+                obj.isGrabbable = true;
+                obj.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            }
+        }
     }
 }

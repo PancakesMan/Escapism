@@ -54,7 +54,13 @@ public class SnapDropZonePuzzle : MonoBehaviour {
             OnPuzzleCompletedCorrectly.Invoke();
             foreach (DropAreaObjectConnector connector in List)
             {
-                connector.SnapDropZone.GetCurrentSnappedObject().GetComponent<VRTK_InteractableObject>().isGrabbable = false;
+                GameObject snapped = connector.SnapDropZone.GetCurrentSnappedObject();
+                if (snapped)
+                {
+                    VRTK_InteractableObject obj = snapped.GetComponent<VRTK_InteractableObject>();
+                    if (obj)
+                        obj.isGrabbable = false;
+                }
             }
             enabled = false;
         }

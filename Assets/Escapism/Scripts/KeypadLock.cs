@@ -28,11 +28,15 @@ public class KeypadLock : MonoBehaviour {
         {
             if (other.name == "O")
             {
+                // If no numbers have been entered
+                // Don't try comparing the code
+                if (_Index == 0) return;
+
                 for (int i = 0; i < _CurrentCode.Length; i++)
                     if (_CurrentCode[i].name != Code[i].name) return;
 
                 // If the code is correct
-                Lock.Locked = false;
+                Lock.Unlock();
                 other.transform.parent.parent = other.transform.parent.parent.parent;
             }
             else if (other.name == "X")
