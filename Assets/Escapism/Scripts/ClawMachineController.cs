@@ -57,6 +57,7 @@ public class ClawMachineController : MonoBehaviour {
             case 2:
                 LeftRightMover.GetComponent<PlatformScript>().enabled = false;
 
+                Claw.GetComponent<CapsuleCollider>().enabled = true;
                 Claw.GetComponent<PlatformScript>().enabled = true;
                 Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
 
@@ -94,10 +95,12 @@ public class ClawMachineController : MonoBehaviour {
             if (obj)
             {
                 Debug.Log("Obj is not null");
+                Claw.GetComponent<CapsuleCollider>().enabled = false;
+                claw.ForceUnsnap();
+
                 obj.isGrabbable = true;
                 obj.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             }
-            claw.ForceUnsnap();
         }
     }
 }

@@ -8536,8 +8536,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81a9463562806f47b7624131a269082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!64 &884595289
-MeshCollider:
+--- !u!136 &884595288
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -8545,11 +8545,10 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 754a39ca1be4f514480ac98db33e4ebd, type: 3}
+  m_Radius: 0.03
+  m_Height: 0.23
+  m_Direction: 1
+  m_Center: {x: -0.005, y: 0.0000000074505815, z: 0.015}
 --- !u!1001 &891098514
 Prefab:
   m_ObjectHideFlags: 0
