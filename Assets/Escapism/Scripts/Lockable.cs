@@ -18,8 +18,6 @@ public class Lockable : MonoBehaviour {
     public bool Locked = false;
     private bool _Locked;
 
-    public VRTK.Controllables.PhysicsBased.VRTK_PhysicsSlider[] DisabledObjectsWhenUnlocked;
-
     public LockedEvent OnLocked;
     public UnlockedEvent OnUnlocked;
 
@@ -45,8 +43,6 @@ public class Lockable : MonoBehaviour {
                 default:
                     break;
             }
-            foreach (VRTK.Controllables.PhysicsBased.VRTK_PhysicsSlider drawer in DisabledObjectsWhenUnlocked)
-                drawer.enabled = true;
         }
         else
         {
@@ -62,8 +58,6 @@ public class Lockable : MonoBehaviour {
                 default:
                     break;
             }
-            foreach (VRTK.Controllables.PhysicsBased.VRTK_PhysicsSlider drawer in DisabledObjectsWhenUnlocked)
-                drawer.enabled = false;
         }
     }
 
