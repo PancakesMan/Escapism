@@ -9,6 +9,9 @@ public class ClawMachineController : MonoBehaviour {
 
     private int _TimesButtonPressed = -1;
     private bool _Resetting = false;
+    private bool _BallPuzzle = false;
+
+    private int _BallsDropped = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -61,6 +64,7 @@ public class ClawMachineController : MonoBehaviour {
                 Claw.GetComponent<PlatformScript>().enabled = true;
                 Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
 
+                _Resetting = true;
                 Invoke("ResetMachine", Claw.GetComponent<PlatformScript>().MovingDistanceY * 2);
                 break;
 
@@ -71,8 +75,6 @@ public class ClawMachineController : MonoBehaviour {
 
     private void ResetMachine()
     {
-        _Resetting = true;
-
         Claw.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
 
         FrontBackMover.GetComponent<PlatformScript>().enabled = true;
@@ -86,7 +88,20 @@ public class ClawMachineController : MonoBehaviour {
 
     private void FinishResetting()
     {
+        if (_BallPuzzle == false && Claw.GetComponentInChildren<VRTK.VRTK_SnapDropZone>().GetCurrentSnappedInteractableObject())
+        {
+            LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
+            Invoke("FinishResetting", (LeftRightMover.GetComponent<PlatformScript>().MovingDistanceY / 4) * _BallsDropped);
+            _BallPuzzle = true;
+            _BallsDropped++;
+            return;
+        }
+
+        LeftRightMover.GetComponent<PlatformScript>().enabled = false;
+
         _Resetting = false;
+        _BallPuzzle = false;
+
         VRTK.VRTK_SnapDropZone claw = transform.parent.GetComponentInChildren<VRTK.VRTK_SnapDropZone>();
         if (claw)
         {

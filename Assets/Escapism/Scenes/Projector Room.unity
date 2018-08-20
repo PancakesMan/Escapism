@@ -1845,6 +1845,12 @@ Prefab:
     - {fileID: 114013337744175440, guid: c024b5811fc90d24fb5d64f63e35a6ab, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c024b5811fc90d24fb5d64f63e35a6ab, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &299179008 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114165376608173828, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+    type: 2}
+  m_PrefabInternal: {fileID: 299179007}
+  m_Script: {fileID: 11500000, guid: 2ed2aa1a29b92ca4f84a26a5f6e9218b, type: 3}
 --- !u!1 &319718370
 GameObject:
   m_ObjectHideFlags: 0
@@ -6925,7 +6931,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af970ac4acf794740817c894dd7b3ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   Locked: 0
+  OnLocked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Lockable+LockedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnUnlocked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Lockable+UnlockedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1209383431 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1538727058887424, guid: be540b97364be0a4890e39e62ac89ed1,
@@ -10324,7 +10341,7 @@ MonoBehaviour:
   blinkTransitionSpeed: 0.6
   distanceBlinkDelay: 0
   headsetPositionCompensation: 1
-  targetListPolicy: {fileID: 0}
+  targetListPolicy: {fileID: 299179008}
   navMeshData: {fileID: 0}
   navMeshLimitDistance: 0
 --- !u!1 &2018540078
