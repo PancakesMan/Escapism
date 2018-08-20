@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public enum TaskState { Failed, NotStarted, InProgress, Completed }
+public enum TaskState { Failed, Inactive, InProgress, Completed }
 
 public class Task : MonoBehaviour {
 
+    [System.Serializable]
     public class StartedEvent : UnityEvent { }
+    [System.Serializable]
     public class CompletedEvent : UnityEvent { }
+    [System.Serializable]
     public class FailedEvent : UnityEvent { }
 
     public string Description;
@@ -21,7 +24,7 @@ public class Task : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        _State = TaskState.NotStarted;
+        _State = TaskState.Inactive;
 	}
 	
 	// Update is called once per frame
@@ -31,7 +34,7 @@ public class Task : MonoBehaviour {
 
     public void StartTask()
     {
-        if (_State == TaskState.NotStarted)
+        if (_State == TaskState.Inactive)
         {
             _State = TaskState.InProgress;
             OnStarted.Invoke();
