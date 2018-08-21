@@ -13,18 +13,23 @@ public class ClawMachineController : MonoBehaviour {
 
     private int _BallsDropped = 0;
 
+    private float _ButtonCD = 0.15f;
+    private float _ButtonCDTimer = 0.0f;
+
 	// Use this for initialization
 	void Start () {
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        _ButtonCDTimer += Time.deltaTime;
 	}
 
     private void OnTriggerEnter(Collider other)
     {
-        if (Active && !_Resetting)
+        if (Active && !_Resetting && _ButtonCDTimer > _ButtonCD)
         {
+            _ButtonCDTimer = 0.0f;
             if (other.CompareTag("Button"))
             {
                 _TimesButtonPressed += 1;
@@ -91,7 +96,7 @@ public class ClawMachineController : MonoBehaviour {
         if (_BallPuzzle == false && Claw.GetComponentInChildren<VRTK.VRTK_SnapDropZone>().GetCurrentSnappedInteractableObject())
         {
             LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
-            Invoke("FinishResetting", (LeftRightMover.GetComponent<PlatformScript>().MovingDistanceY / 4) * _BallsDropped);
+            Invoke("FinishResetting", 0.55f * _BallsDropped);
             _BallPuzzle = true;
             _BallsDropped++;
             return;
