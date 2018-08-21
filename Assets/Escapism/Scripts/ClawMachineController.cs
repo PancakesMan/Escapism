@@ -65,7 +65,7 @@ public class ClawMachineController : MonoBehaviour {
                 Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
 
                 _Resetting = true;
-                Invoke("ResetMachine", Claw.GetComponent<PlatformScript>().MovingDistanceY * 2);
+                Invoke("ResetMachine", Claw.GetComponent<PlatformScript>().MovingDistanceY * 2 * 15);
                 break;
 
             default:
@@ -83,7 +83,7 @@ public class ClawMachineController : MonoBehaviour {
         LeftRightMover.GetComponent<PlatformScript>().enabled = true;
         LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
 
-        Invoke("FinishResetting", 3.0f);
+        Invoke("FinishResetting", 2.0f);
     }
 
     private void FinishResetting()
