@@ -10173,8 +10173,8 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1028106257}
-        m_MethodName: CheckObjectsEnabled
-        m_Mode: 1
+        m_MethodName: MarkStageIncomplete
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10211,8 +10211,8 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1028106257}
-        m_MethodName: CheckObjectsEnabled
-        m_Mode: 1
+        m_MethodName: MarkStageCompleted
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11355,10 +11355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1accd8d744dc2374cb3a9c2a3b1fba6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Objects:
-  - {fileID: 1959835359}
-  - {fileID: 575190222}
-  - {fileID: 598414887}
+  Stages: 000000
   OnPuzzleCompleted:
     m_PersistentCalls:
       m_Calls:
@@ -14848,12 +14845,12 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1028106257}
-        m_MethodName: CheckObjectsEnabled
-        m_Mode: 1
+        m_MethodName: MarkStageIncomplete
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -14886,12 +14883,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1028106257}
-        m_MethodName: CheckObjectsEnabled
-        m_Mode: 1
+        m_MethodName: MarkStageCompleted
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -20102,12 +20099,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1028106257}
-        m_MethodName: CheckObjectsEnabled
-        m_Mode: 1
+        m_MethodName: MarkStageIncomplete
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -20140,12 +20137,12 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1028106257}
-        m_MethodName: CheckObjectsEnabled
-        m_Mode: 1
+        m_MethodName: MarkStageCompleted
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1

@@ -7,16 +7,32 @@ public class MultistagePuzzle : MonoBehaviour {
     [System.Serializable]
     public class PuzzleCompleted : UnityEvent { }
 
-    public GameObject[] Objects;
+    public bool[] Stages;
     public PuzzleCompleted OnPuzzleCompleted;
 
+    bool _Completed = false;
 	// Use this for initialization
-	public void CheckObjectsEnabled()
+	void CheckPuzzleCompleted()
     {
-        foreach (GameObject go in Objects)
-            if (!go.activeSelf)
-                return;
+        if (_Completed) return;
+
+        foreach (bool b in Stages)
+            if (!b) return;
 
         OnPuzzleCompleted.Invoke();
+    }
+
+    public void MarkStageCompleted(int index)
+    {
+        if (index > Stages.Length) return;
+
+        Stages[index] = true;
+        CheckPuzzleCompleted();
+    }
+
+    public void MarkStageIncomplete(int index)
+    {
+        if (index > Stages.Length) return;
+        Stages[index] = false;
     }
 }
