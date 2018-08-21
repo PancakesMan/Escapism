@@ -11355,7 +11355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1accd8d744dc2374cb3a9c2a3b1fba6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stages: 000000
+  Stages: 3
   OnPuzzleCompleted:
     m_PersistentCalls:
       m_Calls:
