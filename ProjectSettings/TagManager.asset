@@ -8,6 +8,7 @@ TagManager:
   - Button
   - Coin
   - Teleportable
+  - Magnetic
   layers:
   - Default
   - TransparentFX

@@ -13,7 +13,7 @@ public class ClawMachineController : MonoBehaviour {
 
     private int _BallsDropped = 0;
 
-    private float _ButtonCD = 0.15f;
+    private float _ButtonCD = 0.5f;
     private float _ButtonCDTimer = 0.0f;
 
 	// Use this for initialization
@@ -99,6 +99,7 @@ public class ClawMachineController : MonoBehaviour {
             Invoke("FinishResetting", 0.55f * _BallsDropped);
             _BallPuzzle = true;
             _BallsDropped++;
+            _BallsDropped %= 4;
             return;
         }
 
@@ -107,7 +108,7 @@ public class ClawMachineController : MonoBehaviour {
         _Resetting = false;
         _BallPuzzle = false;
 
-        VRTK.VRTK_SnapDropZone claw = transform.parent.GetComponentInChildren<VRTK.VRTK_SnapDropZone>();
+        VRTK.VRTK_SnapDropZone claw = Claw.GetComponentInChildren<VRTK.VRTK_SnapDropZone>();
         if (claw)
         {
             Debug.Log("Claw is not null");
@@ -119,7 +120,7 @@ public class ClawMachineController : MonoBehaviour {
                 claw.ForceUnsnap();
 
                 obj.isGrabbable = true;
-                obj.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                //obj.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             }
         }
     }
