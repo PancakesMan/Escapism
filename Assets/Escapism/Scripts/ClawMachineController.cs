@@ -98,7 +98,7 @@ public class ClawMachineController : MonoBehaviour {
             LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
             Invoke("FinishResetting", 0.55f * _BallsDropped);
             _BallPuzzle = true;
-            _BallsDropped++;
+            //_BallsDropped++;
             _BallsDropped %= 4;
             return;
         }
@@ -118,9 +118,6 @@ public class ClawMachineController : MonoBehaviour {
                 Debug.Log("Obj is not null");
                 Claw.GetComponent<Collider>().enabled = false;
                 claw.ForceUnsnap();
-
-                obj.isGrabbable = true;
-                //obj.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             }
         }
     }
@@ -128,6 +125,11 @@ public class ClawMachineController : MonoBehaviour {
     public void ResetBallsDropped()
     {
         _BallsDropped = 0;
+    }
+
+    public void IncrementBallsDropped()
+    {
+        _BallsDropped += 1;
     }
 
     public void SetActive()

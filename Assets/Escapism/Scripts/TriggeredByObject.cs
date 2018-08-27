@@ -14,8 +14,8 @@ public class TriggeredByObject : MonoBehaviour {
 
     public DetectMode detectMode;
 
-    public GameObject ObjectTrigger;
-    public string TagTrigger;
+    public GameObject[] ObjectTrigger;
+    public string[] TagTrigger;
 
     public TriggerEnter OnTriggerEntered;
     public TriggerExit OnTriggerExited;
@@ -28,12 +28,14 @@ public class TriggeredByObject : MonoBehaviour {
         switch (detectMode)
         {
             case DetectMode.GameObject:
-                if (other.gameObject == ObjectTrigger)
-                    OnTriggerEntered.Invoke();
+                foreach (GameObject go in ObjectTrigger)
+                    if (other.gameObject == go)
+                        OnTriggerEntered.Invoke();
                 break;
             case DetectMode.Tag:
-                if (other.gameObject.CompareTag(TagTrigger))
-                    OnTriggerEntered.Invoke();
+                foreach(string tag in TagTrigger)
+                    if (other.gameObject.CompareTag(tag))
+                        OnTriggerEntered.Invoke();
                 break;
             default:
                 break;
@@ -47,12 +49,14 @@ public class TriggeredByObject : MonoBehaviour {
         switch (detectMode)
         {
             case DetectMode.GameObject:
-                if (other.gameObject == ObjectTrigger)
-                    OnTriggerExited.Invoke();
+                foreach (GameObject go in ObjectTrigger)
+                    if (other.gameObject == go)
+                        OnTriggerExited.Invoke();
                 break;
             case DetectMode.Tag:
-                if (other.gameObject.CompareTag(TagTrigger))
-                    OnTriggerExited.Invoke();
+                foreach (string tag in TagTrigger)
+                    if (other.gameObject.CompareTag(tag))
+                        OnTriggerExited.Invoke();
                 break;
             default:
                 break;

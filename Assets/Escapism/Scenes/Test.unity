@@ -712,6 +712,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 49664207}
+  - component: {fileID: 49664211}
   - component: {fileID: 49664210}
   - component: {fileID: 49664209}
   - component: {fileID: 49664208}
@@ -782,6 +783,42 @@ MonoBehaviour:
   displayDropZoneInEditor: 1
   defaultSnappedInteractableObject: {fileID: 0}
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &49664211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 49664206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 1
+  ObjectTrigger: []
+  TagTrigger:
+  - Magnetic
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 801958102}
+        m_MethodName: IncrementBallsDropped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!4 &50136408 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -13990,8 +14027,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectMode: 0
-  ObjectTrigger: {fileID: 986445054}
-  TagTrigger: 
+  ObjectTrigger:
+  - {fileID: 986445054}
+  TagTrigger: []
   OnTriggerEntered:
     m_PersistentCalls:
       m_Calls:
@@ -14222,6 +14260,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 952879525}
+  - component: {fileID: 952879529}
   - component: {fileID: 952879528}
   - component: {fileID: 952879527}
   - component: {fileID: 952879526}
@@ -14292,6 +14331,42 @@ MonoBehaviour:
   displayDropZoneInEditor: 1
   defaultSnappedInteractableObject: {fileID: 0}
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &952879529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952879524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 1
+  ObjectTrigger: []
+  TagTrigger:
+  - Magnetic
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 801958102}
+        m_MethodName: IncrementBallsDropped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &964071237
 GameObject:
   m_ObjectHideFlags: 0
@@ -18701,6 +18776,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1235694590}
+  - component: {fileID: 1235694594}
   - component: {fileID: 1235694593}
   - component: {fileID: 1235694592}
   - component: {fileID: 1235694591}
@@ -18771,6 +18847,42 @@ MonoBehaviour:
   displayDropZoneInEditor: 1
   defaultSnappedInteractableObject: {fileID: 0}
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &1235694594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235694589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 1
+  ObjectTrigger: []
+  TagTrigger:
+  - Magnetic
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 801958102}
+        m_MethodName: IncrementBallsDropped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!4 &1239454703 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -19820,8 +19932,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectMode: 0
-  ObjectTrigger: {fileID: 309132486}
-  TagTrigger: 
+  ObjectTrigger:
+  - {fileID: 309132486}
+  TagTrigger: []
   OnTriggerEntered:
     m_PersistentCalls:
       m_Calls:
@@ -27676,8 +27789,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectMode: 0
-  ObjectTrigger: {fileID: 2088361765}
-  TagTrigger: 
+  ObjectTrigger:
+  - {fileID: 2088361765}
+  TagTrigger: []
   OnTriggerEntered:
     m_PersistentCalls:
       m_Calls:
@@ -33178,6 +33292,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2000231404}
+  - component: {fileID: 2000231408}
   - component: {fileID: 2000231407}
   - component: {fileID: 2000231406}
   - component: {fileID: 2000231405}
@@ -33248,6 +33363,42 @@ MonoBehaviour:
   displayDropZoneInEditor: 1
   defaultSnappedInteractableObject: {fileID: 0}
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &2000231408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000231403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 1
+  ObjectTrigger: []
+  TagTrigger:
+  - Magnetic
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 801958102}
+        m_MethodName: IncrementBallsDropped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &2001537836
 GameObject:
   m_ObjectHideFlags: 0
