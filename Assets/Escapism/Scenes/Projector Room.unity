@@ -3770,6 +3770,7 @@ GameObject:
   - component: {fileID: 310475469}
   - component: {fileID: 310475468}
   - component: {fileID: 310475467}
+  - component: {fileID: 310475470}
   m_Layer: 0
   m_Name: SnapPoint (2)
   m_TagString: Untagged
@@ -3837,6 +3838,42 @@ MonoBehaviour:
   displayDropZoneInEditor: 1
   defaultSnappedInteractableObject: {fileID: 0}
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &310475470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 310475465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 1
+  ObjectTrigger: []
+  TagTrigger:
+  - Magnetic
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510946817}
+        m_MethodName: ResetBallsDropped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &311627092
 GameObject:
   m_ObjectHideFlags: 0
@@ -6439,6 +6476,7 @@ GameObject:
   - component: {fileID: 597069005}
   - component: {fileID: 597069004}
   - component: {fileID: 597069003}
+  - component: {fileID: 597069006}
   m_Layer: 0
   m_Name: SnapPoint (1)
   m_TagString: Untagged
@@ -6506,6 +6544,42 @@ MonoBehaviour:
   displayDropZoneInEditor: 1
   defaultSnappedInteractableObject: {fileID: 0}
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &597069006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597069001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 1
+  ObjectTrigger: []
+  TagTrigger:
+  - Magnetic
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510946817}
+        m_MethodName: ResetBallsDropped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &598889106
 GameObject:
   m_ObjectHideFlags: 0
@@ -12085,6 +12159,7 @@ GameObject:
   - component: {fileID: 1183085050}
   - component: {fileID: 1183085049}
   - component: {fileID: 1183085048}
+  - component: {fileID: 1183085051}
   m_Layer: 0
   m_Name: SnapPoint (4)
   m_TagString: Untagged
@@ -12152,6 +12227,42 @@ MonoBehaviour:
   displayDropZoneInEditor: 1
   defaultSnappedInteractableObject: {fileID: 0}
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &1183085051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1183085046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 1
+  ObjectTrigger: []
+  TagTrigger:
+  - Magnetic
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510946817}
+        m_MethodName: ResetBallsDropped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1187180928
 GameObject:
   m_ObjectHideFlags: 0
@@ -21448,6 +21559,7 @@ GameObject:
   - component: {fileID: 1929340286}
   - component: {fileID: 1929340285}
   - component: {fileID: 1929340284}
+  - component: {fileID: 1929340287}
   m_Layer: 0
   m_Name: SnapPoint (3)
   m_TagString: Untagged
@@ -21515,6 +21627,42 @@ MonoBehaviour:
   displayDropZoneInEditor: 1
   defaultSnappedInteractableObject: {fileID: 0}
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &1929340287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1929340282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 1
+  ObjectTrigger: []
+  TagTrigger:
+  - Magnetic
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510946817}
+        m_MethodName: ResetBallsDropped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1931868108 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: 91d79d60632baf24ba731a34b1a4943f, type: 3}
