@@ -13,6 +13,7 @@ public struct DropAreaObjectConnector
 
 public class SnapDropZonePuzzle : MonoBehaviour {
 
+    public bool FireCompletedIncorrectlyEarly;
     public DropAreaObjectConnector[] List;
 
     [System.Serializable]
@@ -47,6 +48,11 @@ public class SnapDropZonePuzzle : MonoBehaviour {
 
             if (connector.SnapDropZone.GetCurrentSnappedObject().name == connector.Object.name)
                 correctCount++;
+            else
+            {
+                if (FireCompletedIncorrectlyEarly)
+                    OnPuzzleCompletedIncorrectly.Invoke();
+            }
         }
 
         if (correctCount == List.Length)

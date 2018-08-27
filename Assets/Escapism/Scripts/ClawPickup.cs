@@ -4,10 +4,12 @@ using UnityEngine;
 using VRTK;
 
 public class ClawPickup : MonoBehaviour {
+
+    public VRTK.VRTK_SnapDropZone SnapDropZone;
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Claw hit " + other.gameObject.name);
-        GetComponentInChildren<VRTK_SnapDropZone>().ForceSnap(other.gameObject);
-        Debug.Log("Claw snapped object is: " + GetComponentInChildren<VRTK_SnapDropZone>().GetCurrentSnappedObject().name);
+        SnapDropZone.ForceSnap(other.gameObject);
     }
 }

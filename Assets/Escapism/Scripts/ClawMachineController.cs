@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClawMachineController : MonoBehaviour {
 
-    public bool Active = false;
+    public bool Active;
     public GameObject FrontBackMover, LeftRightMover, Claw;
 
     private int _TimesButtonPressed = -1;
@@ -93,7 +93,7 @@ public class ClawMachineController : MonoBehaviour {
 
     private void FinishResetting()
     {
-        if (_BallPuzzle == false && Claw.GetComponentInChildren<VRTK.VRTK_SnapDropZone>().GetCurrentSnappedInteractableObject())
+        if (_BallPuzzle == false && Claw.GetComponent<ClawPickup>().SnapDropZone.GetCurrentSnappedInteractableObject())
         {
             LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
             Invoke("FinishResetting", 0.55f * _BallsDropped);
@@ -108,7 +108,7 @@ public class ClawMachineController : MonoBehaviour {
         _Resetting = false;
         _BallPuzzle = false;
 
-        VRTK.VRTK_SnapDropZone claw = Claw.GetComponentInChildren<VRTK.VRTK_SnapDropZone>();
+        VRTK.VRTK_SnapDropZone claw = Claw.GetComponent<ClawPickup>().SnapDropZone;
         if (claw)
         {
             Debug.Log("Claw is not null");
@@ -123,5 +123,20 @@ public class ClawMachineController : MonoBehaviour {
                 //obj.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             }
         }
+    }
+
+    public void ResetBallsDropped()
+    {
+        _BallsDropped = 0;
+    }
+
+    public void SetActive()
+    {
+        Active = true;
+    }
+
+    public void SetInactive()
+    {
+        Active = false;
     }
 }
