@@ -20412,7 +20412,7 @@ MonoBehaviour:
   FireCompletedIncorrectlyEarly: 0
   List:
   - SnapDropZone: {fileID: 1277532006}
-    Object: {fileID: 0}
+    Object: {fileID: 2011307754}
   OnPuzzleCompletedCorrectly:
     m_PersistentCalls:
       m_Calls:
