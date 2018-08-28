@@ -579,6 +579,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &23388649
 Prefab:
   m_ObjectHideFlags: 0
@@ -1214,7 +1216,7 @@ GameObject:
   - component: {fileID: 76337561}
   - component: {fileID: 76337570}
   m_Layer: 0
-  m_Name: Yellow
+  m_Name: Gold
   m_TagString: Magnetic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1244,6 +1246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &76337562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,6 +1973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &107114100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2940,7 +2946,7 @@ GameObject:
   - component: {fileID: 182458195}
   - component: {fileID: 182458194}
   m_Layer: 0
-  m_Name: Yellow
+  m_Name: Gold
   m_TagString: Magnetic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2982,6 +2988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &182458196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3456,7 +3464,7 @@ GameObject:
   - component: {fileID: 213037950}
   - component: {fileID: 213037949}
   m_Layer: 0
-  m_Name: Yellow
+  m_Name: Gold
   m_TagString: Magnetic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3498,6 +3506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &213037951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3924,7 +3934,7 @@ GameObject:
   - component: {fileID: 246983686}
   - component: {fileID: 246983685}
   m_Layer: 0
-  m_Name: Yellow
+  m_Name: Gold
   m_TagString: Magnetic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3966,6 +3976,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &246983687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6473,6 +6485,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &449050958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8816,6 +8830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &628269863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9413,6 +9429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!64 &634265996
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10176,6 +10194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &681957920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10763,6 +10783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &714620037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12187,7 +12209,7 @@ GameObject:
   - component: {fileID: 823495963}
   - component: {fileID: 823495962}
   m_Layer: 0
-  m_Name: Yellow
+  m_Name: Gold
   m_TagString: Magnetic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12229,6 +12251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &823495964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12560,6 +12584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &827044505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12920,6 +12946,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &836176959 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 800e7066d76ef454d8ae1b782e26ca03, type: 3}
@@ -15367,6 +15395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1025581610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18129,7 +18159,7 @@ GameObject:
   - component: {fileID: 1198220570}
   - component: {fileID: 1198220569}
   m_Layer: 0
-  m_Name: Yellow
+  m_Name: Gold
   m_TagString: Magnetic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18171,6 +18201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1198220571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18944,6 +18976,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1242038513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20606,6 +20640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1320325194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21324,7 +21360,7 @@ GameObject:
   - component: {fileID: 1372620456}
   - component: {fileID: 1372620455}
   m_Layer: 0
-  m_Name: Yellow
+  m_Name: Gold
   m_TagString: Magnetic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21366,6 +21402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1372620457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21683,6 +21721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1384349428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23502,7 +23542,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: -90
-    max: 0
+    max: -10
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -24108,6 +24148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1516039181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24354,6 +24396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1519083031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24859,6 +24903,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1540511736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25165,6 +25211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1551370942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26243,6 +26291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1607489445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28254,6 +28304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1725154179
 GameObject:
   m_ObjectHideFlags: 0
@@ -28316,6 +28368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1725154183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28867,6 +28921,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1739559126
 GameObject:
   m_ObjectHideFlags: 0
@@ -28930,6 +28986,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1739559131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29483,6 +29541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1752970629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29802,6 +29862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1771126099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30335,6 +30397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1782579374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32293,6 +32357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1954916025
 MonoBehaviour:
   m_ObjectHideFlags: 0
