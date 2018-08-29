@@ -9,6 +9,8 @@ public class ClawPickup : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Magnetic") == false) return;
+
         Debug.Log("Claw hit " + other.gameObject.name);
         SnapDropZone.ForceSnap(other.gameObject);
     }
