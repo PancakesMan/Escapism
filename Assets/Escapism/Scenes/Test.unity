@@ -19177,11 +19177,11 @@ GameObject:
   - component: {fileID: 1213936948}
   - component: {fileID: 1213936949}
   - component: {fileID: 1213936958}
-  - component: {fileID: 1213936957}
   - component: {fileID: 1213936956}
   - component: {fileID: 1213936955}
   - component: {fileID: 1213936954}
   - component: {fileID: 1213936953}
+  - component: {fileID: 1213936957}
   m_Layer: 0
   m_Name: piggybank_Broken_Butt
   m_TagString: Untagged
@@ -19361,15 +19361,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1213936947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a1ebaa51525b734287157cb3f53f958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 0
+  precisionGrab: 1
   rightSnapHandle: {fileID: 0}
   leftSnapHandle: {fileID: 0}
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
+  detachDistance: 1
+  velocityLimit: Infinity
+  angularVelocityLimit: Infinity
+  maxDistanceDelta: 10
 --- !u!114 &1213936958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19391,7 +19395,7 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 1213936957}
+  grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 1213936956}
   isUsable: 0
   holdButtonToUse: 1
@@ -35650,11 +35654,11 @@ GameObject:
   - component: {fileID: 2144041387}
   - component: {fileID: 2144041386}
   - component: {fileID: 2144041398}
-  - component: {fileID: 2144041397}
   - component: {fileID: 2144041396}
   - component: {fileID: 2144041395}
   - component: {fileID: 2144041394}
   - component: {fileID: 2144041393}
+  - component: {fileID: 2144041397}
   m_Layer: 0
   m_Name: PiggyBank_Broken_Head
   m_TagString: Untagged
@@ -35886,15 +35890,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2144041385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a1ebaa51525b734287157cb3f53f958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 0
+  precisionGrab: 1
   rightSnapHandle: {fileID: 0}
   leftSnapHandle: {fileID: 0}
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
+  detachDistance: 1
+  velocityLimit: Infinity
+  angularVelocityLimit: Infinity
+  maxDistanceDelta: 10
 --- !u!114 &2144041398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35916,7 +35924,7 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 2144041397}
+  grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 2144041396}
   isUsable: 0
   holdButtonToUse: 1
