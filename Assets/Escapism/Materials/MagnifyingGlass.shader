@@ -42,6 +42,12 @@
 			sampler2D _GrabTexture;
 			half _Magnification;
 	
+			//float2 TransformStereoScreenSpaceTex(float2 uv, float w)
+			//{
+			//   float4 scaleOffset = unity_StereoScaleOffset[unity_StereoEyeIndex];
+			//   return uv.xy * scaleOffset.xy + scaleOffset.zw * w;
+			//}
+
 			v2f vert(appdata v)
 			{
 				v2f o;
@@ -50,6 +56,12 @@
 				float4 uv_center = ComputeGrabScreenPos(UnityObjectToClipPos(float4(0, 0, 0, 1)));
 				//the vector from uv_center to our UV coordinate on the GrabTexture
 				float4 uv_diff = ComputeGrabScreenPos(o.vertex) - uv_center;
+
+				float2 uvMod = TransformStereoScreenSpaceTex(uv_diff.xy, o.vertex.w);
+
+				uv_diff.x = uvMod.x;
+				uv_diff.y = uvMod.y;
+
 				//apply magnification
 				uv_diff /= _Magnification;
 				//save result
@@ -59,7 +71,7 @@
 	
 			fixed4 frag(v2f i) : COLOR
 			{
-				return tex2Dproj(_GrabTexture, UNITY_PROJ_COORD(i.uv));
+				return tex2Dproj(_GrabTexture, UNITY_PROJ_COORD(i.uv)) * fixed4(unity_StereoEyeIndex, unity_StereoEyeIndex, unity_StereoEyeIndex,1);
 			}
 			ENDCG
 		}
