@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: bd0a3e58d1bbb694db214727aa63b45c
+timeCreated: 1536024851
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bigSwitchL1
+    100002: bolt1
+    100004: bolt2
+    100006: bolt3
+    100008: bolt4
+    100010: box
+    100012: //RootNode
+    100014: door
+    100016: handle
+    100018: switchL1
+    100020: switchL2
+    100022: switchL3
+    100024: switchR1
+    100026: switchR2
+    100028: switchR3
+    100030: switchR4
+    100032: switchR5
+    100034: switchR6
+    100036: switchR7
+    100038: switchR8
+    100040: switchR9
+    400000: bigSwitchL1
+    400002: bolt1
+    400004: bolt2
+    400006: bolt3
+    400008: bolt4
+    400010: box
+    400012: //RootNode
+    400014: door
+    400016: handle
+    400018: switchL1
+    400020: switchL2
+    400022: switchL3
+    400024: switchR1
+    400026: switchR2
+    400028: switchR3
+    400030: switchR4
+    400032: switchR5
+    400034: switchR6
+    400036: switchR7
+    400038: switchR8
+    400040: switchR9
+    2100000: lambert1
+    2300000: bigSwitchL1
+    2300002: bolt1
+    2300004: bolt2
+    2300006: bolt3
+    2300008: bolt4
+    2300010: box
+    2300012: door
+    2300014: handle
+    2300016: switchL1
+    2300018: switchL2
+    2300020: switchL3
+    2300022: switchR1
+    2300024: switchR2
+    2300026: switchR3
+    2300028: switchR4
+    2300030: switchR5
+    2300032: switchR6
+    2300034: switchR7
+    2300036: switchR8
+    2300038: switchR9
+    3300000: bigSwitchL1
+    3300002: bolt1
+    3300004: bolt2
+    3300006: bolt3
+    3300008: bolt4
+    3300010: box
+    3300012: door
+    3300014: handle
+    3300016: switchL1
+    3300018: switchL2
+    3300020: switchL3
+    3300022: switchR1
+    3300024: switchR2
+    3300026: switchR3
+    3300028: switchR4
+    3300030: switchR5
+    3300032: switchR6
+    3300034: switchR7
+    3300036: switchR8
+    3300038: switchR9
+    4300000: box
+    4300002: door
+    4300004: handle
+    4300006: bolt1
+    4300008: bolt2
+    4300010: bolt3
+    4300012: bolt4
+    4300014: switchR1
+    4300016: switchR2
+    4300018: switchR3
+    4300020: switchR4
+    4300022: switchR5
+    4300024: switchR6
+    4300026: switchL1
+    4300028: switchR7
+    4300030: switchR8
+    4300032: switchR9
+    4300034: bigSwitchL1
+    4300036: switchL2
+    4300038: switchL3
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
