@@ -4,18 +4,25 @@ using UnityEngine;
 
 public class Resettable : MonoBehaviour {
 
-    Vector3 _Position;
-    Quaternion _Rotation;
+    public Vector3 Position;
+    public Vector3 Rotation;
+
+    public float ResetTime = 0.0f;
 
 	// Use this for initialization
 	void Start () {
-        _Position = transform.position;
-        _Rotation = transform.rotation;
+        //_Position = transform.position;
+        //_Rotation = transform.rotation;
 	}
 
-    public void Reset()
+    public void StartReset()
     {
-        transform.position = _Position;
-        transform.rotation = _Rotation;
+        Invoke("InstantReset", ResetTime);
+    }
+
+    public void InstantReset()
+    {
+        transform.position = Position;
+        transform.rotation = Quaternion.Euler(Rotation);
     }
 }

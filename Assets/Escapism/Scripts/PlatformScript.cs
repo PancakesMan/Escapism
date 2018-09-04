@@ -65,4 +65,14 @@ public class PlatformScript : MonoBehaviour
             + (MovingDistanceY == 0 ? 0 : Mathf.PingPong(_Timer / SpeedReduction, MovingDistanceY)) * Vector3.up * (NegativeY ? -1 : 1)
             + (MovingDistanceZ == 0 ? 0 : Mathf.PingPong(_Timer / SpeedReduction, MovingDistanceZ)) * Vector3.forward * (NegativeZ ? -1 : 1);
     }
+
+    public void MoveInitialPosition(Vector3 Position)
+    {
+        _InitialPosition = Position;
+    }
+
+    public Vector3 GetInitialPosition()
+    {
+        return _InitialPosition;
+    }
 }

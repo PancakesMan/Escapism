@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Lockable))]
 public class KeypadLock : MonoBehaviour {
 
+    public Lockable Lock;
     public GameObject[] Code;
 
     public GameObject[] _CurrentCode;
@@ -28,15 +28,20 @@ public class KeypadLock : MonoBehaviour {
         {
             if (other.name == "O")
             {
+                // If no numbers have been entered
+                // Don't try comparing the code
+                if (_Index == 0) return;
+
                 for (int i = 0; i < _CurrentCode.Length; i++)
                     if (_CurrentCode[i].name != Code[i].name) return;
 
                 // If the code is correct
-                GetComponent<Lockable>().Locked = false;
+                Lock.Unlock();
                 other.transform.parent.parent = other.transform.parent.parent.parent;
             }
             else if (other.name == "X")
             {
+                _Index = 0;
                 for (int i = 0; i < _CurrentCode.Length; i++)
                     _CurrentCode[i] = null;
             }

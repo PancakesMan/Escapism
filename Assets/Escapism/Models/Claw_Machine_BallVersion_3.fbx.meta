@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 22b9d6d0df0daf64db30bf705ecd0097
+timeCreated: 1534825453
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Claw_Machine_Box
+    100004: Claw_Machine_Button
+    100006: Claw_Machine_door
+    100008: Claw_Machine_smallBoxes
+    100010: group19
+    100012: group23
+    100014: group24
+    100016: Magnet_box
+    100018: Magnet_cord
+    100020: Magnet_Head
+    100022: Magnet_rack
+    100024: polySurface34
+    100026: polySurface35
+    100028: polySurface36
+    100030: polySurface37
+    100032: polySurface39
+    100034: polySurface40
+    100036: polySurface41
+    100038: polySurface42
+    100040: polySurface43
+    100042: polySurface44
+    100044: polySurface45
+    400000: //RootNode
+    400002: Claw_Machine_Box
+    400004: Claw_Machine_Button
+    400006: Claw_Machine_door
+    400008: Claw_Machine_smallBoxes
+    400010: group19
+    400012: group23
+    400014: group24
+    400016: Magnet_box
+    400018: Magnet_cord
+    400020: Magnet_Head
+    400022: Magnet_rack
+    400024: polySurface34
+    400026: polySurface35
+    400028: polySurface36
+    400030: polySurface37
+    400032: polySurface39
+    400034: polySurface40
+    400036: polySurface41
+    400038: polySurface42
+    400040: polySurface43
+    400042: polySurface44
+    400044: polySurface45
+    2100000: lambert1
+    2300000: Claw_Machine_Button
+    2300002: Claw_Machine_door
+    2300004: Magnet_box
+    2300006: Magnet_cord
+    2300008: Magnet_Head
+    2300010: Magnet_rack
+    2300012: polySurface34
+    2300014: polySurface35
+    2300016: polySurface36
+    2300018: polySurface37
+    2300020: polySurface39
+    2300022: polySurface40
+    2300024: polySurface41
+    2300026: polySurface42
+    2300028: polySurface43
+    2300030: polySurface44
+    2300032: polySurface45
+    3300000: Claw_Machine_Button
+    3300002: Claw_Machine_door
+    3300004: Magnet_box
+    3300006: Magnet_cord
+    3300008: Magnet_Head
+    3300010: Magnet_rack
+    3300012: polySurface34
+    3300014: polySurface35
+    3300016: polySurface36
+    3300018: polySurface37
+    3300020: polySurface39
+    3300022: polySurface40
+    3300024: polySurface41
+    3300026: polySurface42
+    3300028: polySurface43
+    3300030: polySurface44
+    3300032: polySurface45
+    4300000: Claw_Machine_door
+    4300002: polySurface34
+    4300004: polySurface35
+    4300006: polySurface36
+    4300008: polySurface39
+    4300010: polySurface40
+    4300012: polySurface41
+    4300014: polySurface42
+    4300016: polySurface45
+    4300018: polySurface43
+    4300020: polySurface44
+    4300022: Magnet_rack
+    4300024: Magnet_Head
+    4300026: Magnet_cord
+    4300028: Claw_Machine_Button
+    4300030: polySurface37
+    4300032: Magnet_box
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

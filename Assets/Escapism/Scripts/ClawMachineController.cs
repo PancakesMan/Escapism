@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class ClawMachineController : MonoBehaviour {
 
-    public bool Active = false;
+    public bool Active;
     public GameObject FrontBackMover, LeftRightMover, Claw;
 
     private int _TimesButtonPressed = -1;
     private bool _Resetting = false;
+    private bool _BallPuzzle = false;
+
+    private int _BallsDropped = 0;
+
+    private float _ButtonCD = 0.5f;
+    private float _ButtonCDTimer = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -16,12 +22,14 @@ public class ClawMachineController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        _ButtonCDTimer += Time.deltaTime;
 	}
 
     private void OnTriggerEnter(Collider other)
     {
-        if (Active && !_Resetting)
+        if (Active && !_Resetting && _ButtonCDTimer > _ButtonCD)
         {
+            _ButtonCDTimer = 0.0f;
             if (other.CompareTag("Button"))
             {
                 _TimesButtonPressed += 1;
@@ -57,10 +65,12 @@ public class ClawMachineController : MonoBehaviour {
             case 2:
                 LeftRightMover.GetComponent<PlatformScript>().enabled = false;
 
+                Claw.GetComponent<Collider>().enabled = true;
                 Claw.GetComponent<PlatformScript>().enabled = true;
                 Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
 
-                Invoke("ResetMachine", Claw.GetComponent<PlatformScript>().MovingDistanceY * 2);
+                _Resetting = true;
+                Invoke("ResetMachine", Claw.GetComponent<PlatformScript>().MovingDistanceY * 2 * 15);
                 break;
 
             default:
@@ -70,8 +80,6 @@ public class ClawMachineController : MonoBehaviour {
 
     private void ResetMachine()
     {
-        _Resetting = true;
-
         Claw.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
 
         FrontBackMover.GetComponent<PlatformScript>().enabled = true;
@@ -80,11 +88,57 @@ public class ClawMachineController : MonoBehaviour {
         LeftRightMover.GetComponent<PlatformScript>().enabled = true;
         LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.Resetting;
 
-        Invoke("FinishResetting", 3.0f);
+        Invoke("FinishResetting", 2.0f);
     }
 
     private void FinishResetting()
     {
+        if (_BallPuzzle == false && Claw.GetComponent<ClawPickup>().SnapDropZone.GetCurrentSnappedInteractableObject())
+        {
+            LeftRightMover.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
+            Invoke("FinishResetting", 0.55f * _BallsDropped);
+            _BallPuzzle = true;
+            //_BallsDropped++;
+            _BallsDropped %= 4;
+            return;
+        }
+
+        LeftRightMover.GetComponent<PlatformScript>().enabled = false;
+
         _Resetting = false;
+        _BallPuzzle = false;
+
+        VRTK.VRTK_SnapDropZone claw = Claw.GetComponent<ClawPickup>().SnapDropZone;
+        if (claw)
+        {
+            Debug.Log("Claw is not null");
+            VRTK.VRTK_InteractableObject obj = claw.GetCurrentSnappedInteractableObject();
+            if (obj)
+            {
+                Debug.Log("Obj is not null");
+                Claw.GetComponent<Collider>().enabled = false;
+                claw.ForceUnsnap();
+            }
+        }
+    }
+
+    public void ResetBallsDropped()
+    {
+        _BallsDropped = 0;
+    }
+
+    public void IncrementBallsDropped()
+    {
+        _BallsDropped += 1;
+    }
+
+    public void SetActive()
+    {
+        Active = true;
+    }
+
+    public void SetInactive()
+    {
+        Active = false;
     }
 }
