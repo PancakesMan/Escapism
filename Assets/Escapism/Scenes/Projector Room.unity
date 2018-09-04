@@ -7399,7 +7399,7 @@ GameObject:
   - component: {fileID: 380053123}
   - component: {fileID: 380053122}
   m_Layer: 0
-  m_Name: hatch
+  m_Name: if you move me I'll throw a fit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
