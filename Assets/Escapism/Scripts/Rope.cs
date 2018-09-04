@@ -5,17 +5,16 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Rope : MonoBehaviour {
 
-    public int Links = 10;
-
     GameObject chain;
 
     // Use this for initialization
     void Start() {
-        chain = transform.GetChild(0).gameObject;
-        HingeJoint joint = chain.AddComponent<HingeJoint>();
+        //chain = transform.GetChild(0).gameObject;
+        //HingeJoint joint = chain.AddComponent<HingeJoint>();
         //joint.useSpring = true;
-        joint.connectedBody = gameObject.GetComponent<Rigidbody>();
+        //joint.connectedBody = gameObject.GetComponent<Rigidbody>();
 
+        HingeJoint joint;
         //for (int i = 1; i < Links; i++)
         for (int i = 1; i < transform.childCount; i++)
         {
