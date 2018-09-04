@@ -15,6 +15,7 @@ public class Rope : MonoBehaviour {
         //joint.connectedBody = gameObject.GetComponent<Rigidbody>();
 
         HingeJoint joint;
+
         //for (int i = 1; i < Links; i++)
         for (int i = 1; i < transform.childCount; i++)
         {
@@ -23,7 +24,13 @@ public class Rope : MonoBehaviour {
 
             joint = transform.GetChild(i).gameObject.AddComponent<HingeJoint>(); //nextLink.GetComponent<HingeJoint>();
             joint.connectedBody = i == 0 ? transform.GetComponent<Rigidbody>() : transform.GetChild(i - 1).GetComponent<Rigidbody>();
+            //joint.useSpring = true;
 
+            //JointSpring spr = new JointSpring();
+            //spr.damper = 50000;
+            //spr.spring = 5000000;
+
+            //joint.spring = spr;
             joint.anchor = Vector3.zero;
             joint.connectedAnchor = -Vector3.up;
         }
