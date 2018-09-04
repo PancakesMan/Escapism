@@ -7,12 +7,17 @@ public class Resettable : MonoBehaviour {
     public Vector3 Position;
     public Vector3 Rotation;
 
+    public Transform ResetTransform;
+
     public float ResetTime = 0.0f;
 
 	// Use this for initialization
 	void Start () {
-        //_Position = transform.position;
-        //_Rotation = transform.rotation;
+        if (ResetTransform)
+        {
+            Position = ResetTransform.position;
+            Rotation = ResetTransform.rotation.eulerAngles;
+        }
 	}
 
     public void StartReset()
