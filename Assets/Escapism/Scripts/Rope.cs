@@ -17,7 +17,7 @@ public class Rope : MonoBehaviour {
         HingeJoint joint;
 
         //for (int i = 1; i < Links; i++)
-        for (int i = 1; i < transform.childCount; i++)
+        for (int i = 0; i < transform.childCount; i++)
         {
             //GameObject nextLink = Instantiate(chain);
             //nextLink.transform.SetAsLastSibling();
