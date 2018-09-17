@@ -10,10 +10,11 @@ public class KeypadLock : MonoBehaviour {
     public Lockable Lock;
     public GameObject[] Code;
     public Text CodeDisplay;
+    public char BlankChar = '0';
+    private string InitialCodeText;
 
     public GameObject[] _CurrentCode;
     private int _Index = 0;
-    private string InitialCodeText = "";
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +23,7 @@ public class KeypadLock : MonoBehaviour {
         {
             CodeDisplay.text = "";
             for (int i = 0; i < Code.Length; i++)
-                CodeDisplay.text += "0";
+                CodeDisplay.text += BlankChar;
             InitialCodeText = CodeDisplay.text;
         }
 	}
@@ -38,30 +39,11 @@ public class KeypadLock : MonoBehaviour {
         if (other.CompareTag("Button"))
         {
             if (other.name == "O")
-            {
-                // If no numbers have been entered
-                // Don't try comparing the code
-                if (_Index == 0) return;
+                CheckCode();
 
-                for (int i = 0; i < _CurrentCode.Length; i++)
-                    if (_CurrentCode[i].name != Code[i].name) return;
-
-                // If the code is correct
-                Lock.Unlock();
-                other.transform.parent.parent = other.transform.parent.parent.parent;
-
-                if (CodeDisplay)
-                    CodeDisplay.text = InitialCodeText;
-            }
             else if (other.name == "X")
-            {
-                _Index = 0;
-                for (int i = 0; i < _CurrentCode.Length; i++)
-                    _CurrentCode[i] = null;
+                ClearCode();
 
-                if (CodeDisplay)
-                    CodeDisplay.text = InitialCodeText;
-            }
             else if (_Index < _CurrentCode.Length)
             {
                 try
@@ -82,10 +64,35 @@ public class KeypadLock : MonoBehaviour {
                 }
                 catch (Exception ex)
                 {
-                    // Shouldn't hit this exception
                     Debug.Log(ex.Message);
                 }
             }
         }
+    }
+
+    public void ClearCode()
+    {
+        _Index = 0;
+        for (int i = 0; i < _CurrentCode.Length; i++)
+            _CurrentCode[i] = null;
+
+        if (CodeDisplay)
+            CodeDisplay.text = InitialCodeText;
+    }
+
+    public void CheckCode()
+    {
+        // If no numbers have been entered
+        // Don't try comparing the code
+        if (_Index == 0) return;
+
+        for (int i = 0; i < _CurrentCode.Length; i++)
+            if (_CurrentCode[i].name != Code[i].name) return;
+
+        // If the code is correct
+        Lock.Unlock();
+
+        if (CodeDisplay)
+            CodeDisplay.text = InitialCodeText;
     }
 }

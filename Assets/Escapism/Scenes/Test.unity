@@ -3661,6 +3661,7 @@ MonoBehaviour:
   - {fileID: 263101186}
   - {fileID: 1424732712}
   CodeDisplay: {fileID: 1585068832}
+  InitialCodeText: __
   _CurrentCode: []
 --- !u!4 &138905595 stripped
 Transform:
@@ -34808,6 +34809,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 728979837}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Lockable+UnlockedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!54 &1502428441
@@ -37731,7 +37743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1602697329
 RectTransform:
   m_ObjectHideFlags: 0
