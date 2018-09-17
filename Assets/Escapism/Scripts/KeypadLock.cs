@@ -20,6 +20,7 @@ public class KeypadLock : MonoBehaviour {
         _CurrentCode = new GameObject[Code.Length];
         if (CodeDisplay)
         {
+            CodeDisplay.text = "";
             for (int i = 0; i < Code.Length; i++)
                 CodeDisplay.text += "0";
             InitialCodeText = CodeDisplay.text;
