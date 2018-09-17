@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KeypadLock : MonoBehaviour {
 
     public Lockable Lock;
     public GameObject[] Code;
+    public Text CodeDisplay;
 
     public GameObject[] _CurrentCode;
     private int _Index = 0;
@@ -38,12 +40,18 @@ public class KeypadLock : MonoBehaviour {
                 // If the code is correct
                 Lock.Unlock();
                 other.transform.parent.parent = other.transform.parent.parent.parent;
+
+                if (CodeDisplay)
+                    CodeDisplay.text = "";
             }
             else if (other.name == "X")
             {
                 _Index = 0;
                 for (int i = 0; i < _CurrentCode.Length; i++)
                     _CurrentCode[i] = null;
+
+                if (CodeDisplay)
+                    CodeDisplay.text = "";
             }
             else if (_Index < _CurrentCode.Length)
             {
@@ -53,6 +61,9 @@ public class KeypadLock : MonoBehaviour {
                     if (number >= 0 && number < 10)
                     {
                         _CurrentCode[_Index++] = other.gameObject;
+
+                        if (CodeDisplay)
+                            CodeDisplay.text += number;
                     }
                 }
                 catch (Exception ex)
