@@ -15,8 +15,12 @@ public class ClawPickup : MonoBehaviour {
         Debug.Log("Claw hit " + other.gameObject.name);
         SnapDropZone.ForceSnap(other.gameObject);
 
-        MaterialSelector ms = SnapDropZone.GetCurrentSnappedObject().GetComponent<MaterialSelector>();
-        if (ChangeMaterial && ms)
-            ms.SetMaterial(1);
+        GameObject obj = SnapDropZone.GetCurrentSnappedObject();
+        if (obj)
+        {
+            MaterialSelector ms = obj.GetComponent<MaterialSelector>();
+            if (ChangeMaterial && ms)
+                ms.SetMaterial(1);
+        }
     }
 }
