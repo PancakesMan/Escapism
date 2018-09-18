@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class MaterialSelector : MonoBehaviour {
 
+    public bool RandomiseOnStart = true;
     public Material[] Materials;
 
     public void Start()
     {
-        SetMaterialRandomly();
+        if (RandomiseOnStart) SetMaterialRandomly();
     }
 
     public void SetMaterial(int index)

@@ -5,6 +5,7 @@ using VRTK;
 
 public class ClawPickup : MonoBehaviour {
 
+    public bool ChangeMaterial = false;
     public VRTK.VRTK_SnapDropZone SnapDropZone;
 
     private void OnTriggerEnter(Collider other)
@@ -13,5 +14,9 @@ public class ClawPickup : MonoBehaviour {
 
         Debug.Log("Claw hit " + other.gameObject.name);
         SnapDropZone.ForceSnap(other.gameObject);
+
+        MaterialSelector ms = SnapDropZone.GetCurrentSnappedObject().GetComponent<MaterialSelector>();
+        if (ChangeMaterial && ms)
+            ms.SetMaterial(1);
     }
 }
