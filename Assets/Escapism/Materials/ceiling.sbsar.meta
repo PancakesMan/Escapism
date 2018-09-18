@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 951c9207eda5e7a49af112506856a2ce
-timeCreated: 1536553993
+timeCreated: 1537244091
 licenseType: Free
 SubstanceImporter:
   externalObjects: {}
@@ -29,7 +29,7 @@ SubstanceImporter:
       scale: {x: 1, y: 1}
       generateMipmaps: 1
       generateAllOutputs: 0
-      animationUpdateRate: 0
+      animationUpdateRate: 42
     materialProperties:
       serializedVersion: 3
       texEnvs:
@@ -125,12 +125,12 @@ SubstanceImporter:
     - shaderProp: _MetallicGlossMap
       material: {instanceID: 0}
       baseUID: 1160151451
-    - shaderProp: _OcclusionMap
-      material: {instanceID: 0}
-      baseUID: 1160151508
     - shaderProp: _ParallaxMap
       material: {instanceID: 0}
       baseUID: 1160151524
+    - shaderProp: _OcclusionMap
+      material: {instanceID: 0}
+      baseUID: 1160151508
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
