@@ -5,6 +5,7 @@ using UnityEngine;
 public class MaterialSelector : MonoBehaviour {
 
     public bool RandomiseOnStart = true;
+    public bool RenameObjectToMaterial = false;
     public Material[] Materials;
 
     public void Start()
@@ -17,7 +18,8 @@ public class MaterialSelector : MonoBehaviour {
         if (index > Materials.Length) index = 0;
 
         gameObject.GetComponent<MeshRenderer>().material = Materials[index];
-        gameObject.name = Materials[index].name;
+
+        if (RenameObjectToMaterial) gameObject.name = Materials[index].name;
     }
 
     public void SetMaterialRandomly()
@@ -25,6 +27,6 @@ public class MaterialSelector : MonoBehaviour {
         int index = Random.Range(0, Materials.Length);
 
         gameObject.GetComponent<MeshRenderer>().material = Materials[index];
-        gameObject.name = Materials[index].name;
+        if (RenameObjectToMaterial) gameObject.name = Materials[index].name;
     }
 }
