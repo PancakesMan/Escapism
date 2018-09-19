@@ -12,6 +12,11 @@ TagManager:
   - Poster
   - paperjoke
   - Clutter
+  - FxTemporaire
+  - ExcludeTeleport
+  - projectile
+  - TeleportIgnore
+  - panel
   layers:
   - Default
   - TransparentFX
