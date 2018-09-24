@@ -8,9 +8,9 @@ public enum DetectMode { GameObject, Tag }
 public class TriggeredByObject : MonoBehaviour {
 
     [System.Serializable]
-    public class TriggerEnter : UnityEvent { }
+    public class TriggerEnter : UnityEvent<GameObject> { }
     [System.Serializable]
-    public class TriggerExit : UnityEvent { }
+    public class TriggerExit : UnityEvent<GameObject> { }
 
     public DetectMode detectMode;
 
@@ -30,12 +30,12 @@ public class TriggeredByObject : MonoBehaviour {
             case DetectMode.GameObject:
                 foreach (GameObject go in ObjectTrigger)
                     if (other.gameObject == go)
-                        OnTriggerEntered.Invoke();
+                        OnTriggerEntered.Invoke(other.gameObject);
                 break;
             case DetectMode.Tag:
                 foreach(string tag in TagTrigger)
                     if (other.gameObject.CompareTag(tag))
-                        OnTriggerEntered.Invoke();
+                        OnTriggerEntered.Invoke(other.gameObject);
                 break;
             default:
                 break;
@@ -51,12 +51,12 @@ public class TriggeredByObject : MonoBehaviour {
             case DetectMode.GameObject:
                 foreach (GameObject go in ObjectTrigger)
                     if (other.gameObject == go)
-                        OnTriggerExited.Invoke();
+                        OnTriggerExited.Invoke(other.gameObject);
                 break;
             case DetectMode.Tag:
                 foreach (string tag in TagTrigger)
                     if (other.gameObject.CompareTag(tag))
-                        OnTriggerExited.Invoke();
+                        OnTriggerExited.Invoke(other.gameObject);
                 break;
             default:
                 break;
