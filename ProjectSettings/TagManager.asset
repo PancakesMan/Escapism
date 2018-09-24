@@ -17,6 +17,14 @@ TagManager:
   - projectile
   - TeleportIgnore
   - panel
+  - Leg
+  - SnapCube
+  - Arm
+  - SnapCylinder
+  - Saucers
+  - Torso
+  - Head
+  - Solid
   layers:
   - Default
   - TransparentFX
