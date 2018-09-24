@@ -57,9 +57,7 @@ public class KeypadLock : MonoBehaviour {
                             code[_Index] = other.name[0];
                             CodeDisplay.text = code.ToString();
                         }
-
                         _CurrentCode[_Index++] = other.gameObject;
-
                     }
                 }
                 catch (Exception ex)
