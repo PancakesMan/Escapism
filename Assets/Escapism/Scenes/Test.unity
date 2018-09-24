@@ -1624,6 +1624,7 @@ GameObject:
   - component: {fileID: 76337561}
   - component: {fileID: 76337570}
   - component: {fileID: 76337572}
+  - component: {fileID: 76337573}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Magnetic
@@ -1871,6 +1872,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 6733b5266df72ae4081cb4412c1654f0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &76337573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76337559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 76337572}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &77625218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,6 +2748,7 @@ GameObject:
   - component: {fileID: 107114099}
   - component: {fileID: 107114098}
   - component: {fileID: 107114109}
+  - component: {fileID: 107114110}
   m_Layer: 0
   m_Name: BlueDark
   m_TagString: Magnetic
@@ -2958,6 +2996,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 5403522b7ff9e6a4d82ccbf5db1bee80, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &107114110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 107114096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 107114109}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &107840256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,6 +4007,7 @@ GameObject:
   - component: {fileID: 182458195}
   - component: {fileID: 182458194}
   - component: {fileID: 182458205}
+  - component: {fileID: 182458206}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Magnetic
@@ -4180,6 +4255,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 6733b5266df72ae4081cb4412c1654f0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &182458206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 182458192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 182458205}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &186906247
 GameObject:
   m_ObjectHideFlags: 0
@@ -4578,6 +4689,7 @@ GameObject:
   - component: {fileID: 213037950}
   - component: {fileID: 213037949}
   - component: {fileID: 213037960}
+  - component: {fileID: 213037961}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Magnetic
@@ -4825,6 +4937,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 6733b5266df72ae4081cb4412c1654f0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &213037961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 213037947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 213037960}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1001 &219865297
 Prefab:
   m_ObjectHideFlags: 0
@@ -5245,6 +5393,7 @@ GameObject:
   - component: {fileID: 246983686}
   - component: {fileID: 246983685}
   - component: {fileID: 246983696}
+  - component: {fileID: 246983697}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Magnetic
@@ -5492,6 +5641,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 6733b5266df72ae4081cb4412c1654f0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &246983697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246983683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 246983696}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1001 &254209643
 Prefab:
   m_ObjectHideFlags: 0
@@ -9743,6 +9928,7 @@ GameObject:
   - component: {fileID: 449050957}
   - component: {fileID: 449050956}
   - component: {fileID: 449050967}
+  - component: {fileID: 449050968}
   m_Layer: 0
   m_Name: BlueDark
   m_TagString: Magnetic
@@ -9990,6 +10176,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 5403522b7ff9e6a4d82ccbf5db1bee80, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &449050968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 449050954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 449050967}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &453123137
 GameObject:
   m_ObjectHideFlags: 0
@@ -12844,6 +13066,7 @@ GameObject:
   - component: {fileID: 628269862}
   - component: {fileID: 628269861}
   - component: {fileID: 628269872}
+  - component: {fileID: 628269873}
   m_Layer: 0
   m_Name: BlueDark
   m_TagString: Magnetic
@@ -13091,6 +13314,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 5403522b7ff9e6a4d82ccbf5db1bee80, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &628269873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628269859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 628269872}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &628664651
 GameObject:
   m_ObjectHideFlags: 0
@@ -14745,6 +15004,7 @@ GameObject:
   - component: {fileID: 681957919}
   - component: {fileID: 681957918}
   - component: {fileID: 681957929}
+  - component: {fileID: 681957930}
   m_Layer: 0
   m_Name: BlueDark
   m_TagString: Magnetic
@@ -14992,6 +15252,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 5403522b7ff9e6a4d82ccbf5db1bee80, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &681957930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 681957916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 681957929}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &683904988
 GameObject:
   m_ObjectHideFlags: 0
@@ -15577,6 +15873,7 @@ GameObject:
   - component: {fileID: 714620036}
   - component: {fileID: 714620035}
   - component: {fileID: 714620046}
+  - component: {fileID: 714620047}
   m_Layer: 0
   m_Name: Green
   m_TagString: Magnetic
@@ -15824,6 +16121,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 81bb28675f92a6e45b0266b95fb6e3c0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &714620047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 714620033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 714620046}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &715411527
 GameObject:
   m_ObjectHideFlags: 0
@@ -17796,6 +18129,7 @@ GameObject:
   - component: {fileID: 823495963}
   - component: {fileID: 823495962}
   - component: {fileID: 823495973}
+  - component: {fileID: 823495974}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Magnetic
@@ -18043,6 +18377,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 6733b5266df72ae4081cb4412c1654f0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &823495974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823495960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 823495973}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &826791258
 GameObject:
   m_ObjectHideFlags: 0
@@ -18148,6 +18518,7 @@ GameObject:
   - component: {fileID: 827044504}
   - component: {fileID: 827044503}
   - component: {fileID: 827044514}
+  - component: {fileID: 827044515}
   m_Layer: 0
   m_Name: Red
   m_TagString: Magnetic
@@ -18395,6 +18766,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: da8d6f3e1bf976449b69a9410559dafd, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &827044515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827044501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 827044514}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &828490858 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 6352fd6ddcff494448bbaa04ed2ed6ac, type: 3}
@@ -23088,6 +23495,7 @@ GameObject:
   - component: {fileID: 1025581609}
   - component: {fileID: 1025581608}
   - component: {fileID: 1025581619}
+  - component: {fileID: 1025581620}
   m_Layer: 0
   m_Name: Green
   m_TagString: Magnetic
@@ -23335,6 +23743,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 81bb28675f92a6e45b0266b95fb6e3c0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1025581620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1025581606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1025581619}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1028106255
 GameObject:
   m_ObjectHideFlags: 0
@@ -27687,6 +28131,7 @@ GameObject:
   - component: {fileID: 1198220570}
   - component: {fileID: 1198220569}
   - component: {fileID: 1198220580}
+  - component: {fileID: 1198220581}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Magnetic
@@ -27934,6 +28379,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 6733b5266df72ae4081cb4412c1654f0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1198220581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198220567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1198220580}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1200447253
 GameObject:
   m_ObjectHideFlags: 0
@@ -29375,6 +29856,7 @@ GameObject:
   - component: {fileID: 1242038512}
   - component: {fileID: 1242038521}
   - component: {fileID: 1242038523}
+  - component: {fileID: 1242038524}
   m_Layer: 0
   m_Name: Red
   m_TagString: Magnetic
@@ -29622,6 +30104,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: da8d6f3e1bf976449b69a9410559dafd, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1242038524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1242038510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 76337572}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1245381810
 GameObject:
   m_ObjectHideFlags: 0
@@ -31262,6 +31780,7 @@ GameObject:
   - component: {fileID: 1320325193}
   - component: {fileID: 1320325192}
   - component: {fileID: 1320325203}
+  - component: {fileID: 1320325204}
   m_Layer: 0
   m_Name: Red
   m_TagString: Magnetic
@@ -31509,6 +32028,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: da8d6f3e1bf976449b69a9410559dafd, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1320325204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320325190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1320325203}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1333256634
 GameObject:
   m_ObjectHideFlags: 0
@@ -32537,6 +33092,7 @@ GameObject:
   - component: {fileID: 1372620456}
   - component: {fileID: 1372620455}
   - component: {fileID: 1372620466}
+  - component: {fileID: 1372620467}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Magnetic
@@ -32784,6 +33340,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 6733b5266df72ae4081cb4412c1654f0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1372620467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372620453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1372620466}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1379809969
 GameObject:
   m_ObjectHideFlags: 0
@@ -32875,6 +33467,7 @@ GameObject:
   - component: {fileID: 1384349427}
   - component: {fileID: 1384349426}
   - component: {fileID: 1384349437}
+  - component: {fileID: 1384349438}
   m_Layer: 0
   m_Name: Green
   m_TagString: Magnetic
@@ -33122,6 +33715,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 81bb28675f92a6e45b0266b95fb6e3c0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1384349438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1384349424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1384349437}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1385821508
 GameObject:
   m_ObjectHideFlags: 0
@@ -36716,6 +37345,7 @@ GameObject:
   - component: {fileID: 1516039180}
   - component: {fileID: 1516039179}
   - component: {fileID: 1516039190}
+  - component: {fileID: 1516039191}
   m_Layer: 0
   m_Name: Green
   m_TagString: Magnetic
@@ -36963,6 +37593,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 81bb28675f92a6e45b0266b95fb6e3c0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1516039191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1516039177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1516039190}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1518570767
 GameObject:
   m_ObjectHideFlags: 0
@@ -37054,6 +37720,7 @@ GameObject:
   - component: {fileID: 1519083030}
   - component: {fileID: 1519083029}
   - component: {fileID: 1519083040}
+  - component: {fileID: 1519083041}
   m_Layer: 0
   m_Name: BlueDark
   m_TagString: Magnetic
@@ -37301,6 +37968,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 5403522b7ff9e6a4d82ccbf5db1bee80, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1519083041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1519083027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1519083040}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1001 &1519467807
 Prefab:
   m_ObjectHideFlags: 0
@@ -37596,6 +38299,7 @@ GameObject:
   - component: {fileID: 1540511735}
   - component: {fileID: 1540511734}
   - component: {fileID: 1540511745}
+  - component: {fileID: 1540511746}
   m_Layer: 0
   m_Name: Green
   m_TagString: Magnetic
@@ -37843,6 +38547,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 81bb28675f92a6e45b0266b95fb6e3c0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1540511746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1540511732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1540511745}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1541600853
 GameObject:
   m_ObjectHideFlags: 0
@@ -37923,6 +38663,7 @@ GameObject:
   - component: {fileID: 1551370941}
   - component: {fileID: 1551370940}
   - component: {fileID: 1551370951}
+  - component: {fileID: 1551370952}
   m_Layer: 0
   m_Name: Green
   m_TagString: Magnetic
@@ -38170,6 +38911,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 81bb28675f92a6e45b0266b95fb6e3c0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1551370952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551370938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1551370951}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1555609930
 GameObject:
   m_ObjectHideFlags: 0
@@ -39414,6 +40191,7 @@ GameObject:
   - component: {fileID: 1607489444}
   - component: {fileID: 1607489443}
   - component: {fileID: 1607489454}
+  - component: {fileID: 1607489455}
   m_Layer: 0
   m_Name: BlueDark
   m_TagString: Magnetic
@@ -39661,6 +40439,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 5403522b7ff9e6a4d82ccbf5db1bee80, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1607489455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607489441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1607489454}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1609608788
 GameObject:
   m_ObjectHideFlags: 0
@@ -43638,6 +44452,7 @@ GameObject:
   - component: {fileID: 1725154182}
   - component: {fileID: 1725154181}
   - component: {fileID: 1725154192}
+  - component: {fileID: 1725154193}
   m_Layer: 0
   m_Name: Red
   m_TagString: Magnetic
@@ -43885,6 +44700,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: da8d6f3e1bf976449b69a9410559dafd, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1725154193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1725154179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1725154192}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1733477724
 GameObject:
   m_ObjectHideFlags: 0
@@ -44140,6 +44991,7 @@ GameObject:
   - component: {fileID: 1736072208}
   - component: {fileID: 1736072205}
   - component: {fileID: 1736072209}
+  - component: {fileID: 1736072210}
   m_Layer: 0
   m_Name: Green
   m_TagString: Magnetic
@@ -44387,6 +45239,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 81bb28675f92a6e45b0266b95fb6e3c0, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1736072210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1736072196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1736072209}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1736544967
 GameObject:
   m_ObjectHideFlags: 0
@@ -45200,6 +46088,7 @@ GameObject:
   - component: {fileID: 1752970628}
   - component: {fileID: 1752970627}
   - component: {fileID: 1752970638}
+  - component: {fileID: 1752970639}
   m_Layer: 0
   m_Name: Red
   m_TagString: Magnetic
@@ -45447,6 +46336,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: da8d6f3e1bf976449b69a9410559dafd, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1752970639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1752970625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1752970638}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!4 &1753090830 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -45548,6 +46473,7 @@ GameObject:
   - component: {fileID: 1771126098}
   - component: {fileID: 1771126097}
   - component: {fileID: 1771126108}
+  - component: {fileID: 1771126109}
   m_Layer: 0
   m_Name: Red
   m_TagString: Magnetic
@@ -45795,6 +46721,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: da8d6f3e1bf976449b69a9410559dafd, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1771126109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1771126095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1771126108}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!4 &1771297514 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -46416,6 +47378,7 @@ GameObject:
   - component: {fileID: 1782579373}
   - component: {fileID: 1782579382}
   - component: {fileID: 1782579384}
+  - component: {fileID: 1782579385}
   m_Layer: 0
   m_Name: BlueDark
   m_TagString: Magnetic
@@ -46663,6 +47626,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: 5403522b7ff9e6a4d82ccbf5db1bee80, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1782579385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782579371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1782579384}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1783578193
 GameObject:
   m_ObjectHideFlags: 0
@@ -49912,6 +50911,7 @@ GameObject:
   - component: {fileID: 1954916024}
   - component: {fileID: 1954916023}
   - component: {fileID: 1954916034}
+  - component: {fileID: 1954916035}
   m_Layer: 0
   m_Name: Red
   m_TagString: Magnetic
@@ -50159,6 +51159,42 @@ MonoBehaviour:
   Materials:
   - {fileID: 2100000, guid: da8d6f3e1bf976449b69a9410559dafd, type: 2}
   - {fileID: 2100000, guid: 39799de34ee9e9844af0e4e5e1416585, type: 2}
+--- !u!114 &1954916035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1954916021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c05f314d2574a439a62b0f0beb3605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectMode: 0
+  ObjectTrigger:
+  - {fileID: 331353566}
+  TagTrigger: []
+  OnTriggerEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1954916034}
+        m_MethodName: SetMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: TriggeredByObject+TriggerEnter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExited:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggeredByObject+TriggerExit, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1001 &1959309917
 Prefab:
   m_ObjectHideFlags: 0
