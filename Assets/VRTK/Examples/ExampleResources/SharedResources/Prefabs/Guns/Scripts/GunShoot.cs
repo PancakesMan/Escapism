@@ -5,10 +5,31 @@
     public class GunShoot : MonoBehaviour
     {
         public VRTK_InteractableObject linkedObject;
+        public VRTK_SnapDropZone AmmoBarrel;
         public GameObject projectile;
         public Transform projectileSpawnPoint;
         public float projectileSpeed = 1000f;
         public float projectileLife = 5f;
+
+        public int MaxBullets = 6;
+        private int BulletCount;
+
+        private void Start()
+        {
+            BulletCount = MaxBullets;
+            AmmoBarrel.ObjectSnappedToDropZone += AmmoInserted;
+        }
+
+        private void AmmoInserted(object sender, SnapDropZoneEventArgs e)
+        {
+            GameObject obj = AmmoBarrel.GetCurrentSnappedObject();
+            if (obj)
+            {
+                AmmoBarrel.ForceUnsnap();
+                Destroy(obj);
+                Reload();
+            }
+        }
 
         protected virtual void OnEnable()
         {
@@ -30,7 +51,11 @@
 
         protected virtual void InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
         {
-            FireProjectile();
+            if (BulletCount > 0)
+            {
+                BulletCount--;
+                FireProjectile();
+            }
         }
 
         protected virtual void FireProjectile()
@@ -47,6 +72,11 @@
                 }
                 Destroy(clonedProjectile, destroyTime);
             }
+        }
+
+        public void Reload()
+        {
+            BulletCount = MaxBullets;
         }
     }
 }

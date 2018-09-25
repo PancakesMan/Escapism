@@ -25,6 +25,7 @@ TagManager:
   - Torso
   - Head
   - Solid
+  - Ammo
   layers:
   - Default
   - TransparentFX
