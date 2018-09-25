@@ -42052,6 +42052,325 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1663461335}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1663492908
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.276
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.987
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.43045932
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.43045932
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.56098557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.56098557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523334852853474, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_Name
+      value: DummyGunTwo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284849433887702, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[1].controllerType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[1].position.y
+      value: 0.0876
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[1].position.z
+      value: 0.0389
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[1].rotation.x
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[1].scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[1].scale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[1].scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[0].controllerType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[0].position.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[0].position.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[0].rotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[0].rotation.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[2].controllerType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[2].position.y
+      value: 0.0876
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[2].position.z
+      value: 0.0389
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[2].rotation.x
+      value: -52
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[2].scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[2].scale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[2].scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[3].controllerType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[3].position.y
+      value: 0.0876
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[3].position.z
+      value: 0.0389
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[3].rotation.x
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[3].scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[3].scale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[3].scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[4].controllerType
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[4].position.y
+      value: 0.0876
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[4].position.z
+      value: 0.0389
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[4].rotation.x
+      value: -52
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[4].scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[4].scale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[4].scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[5].controllerType
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[5].position.y
+      value: 0.0876
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[5].position.z
+      value: 0.0389
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[5].rotation.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[5].scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[5].scale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[5].scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[6].controllerType
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[6].position.y
+      value: 0.0376
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[6].position.z
+      value: 0.0389
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[6].rotation.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[6].scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[6].scale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137974055116386, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: sdkOverrides.Array.data[6].scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114704336731771232, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: grabOverrideButton
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114704336731771232, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: holdButtonToUse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114704336731771232, guid: 8d1ca14cc1fa29b4bb278968b222ab11,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 33854560001682468, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+    - {fileID: 23504409693091908, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 8d1ca14cc1fa29b4bb278968b222ab11, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1664817125
 Prefab:
   m_ObjectHideFlags: 0
@@ -52109,16 +52428,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 33030117868746418, guid: c024b5811fc90d24fb5d64f63e35a6ab,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 1354620316}
     - target: {fileID: 23108866707248538, guid: c024b5811fc90d24fb5d64f63e35a6ab,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 589691338}
+    - target: {fileID: 33030117868746418, guid: c024b5811fc90d24fb5d64f63e35a6ab,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1354620316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c024b5811fc90d24fb5d64f63e35a6ab, type: 2}
   m_IsPrefabParent: 0
