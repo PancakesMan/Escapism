@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 58c28d9658c5af5498d6c764e19f0933
+timeCreated: 1537927110
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bar_Large_JNT
+    100002: Bar_Large_JNT 1
+    100004: Bar_Small_JNT
+    100006: Bar_Small_JNT 1
+    100008: bell
+    100010: Bell_CTRL
+    100012: Bell_JNT
+    100014: bell_rope
+    100016: Bell_Rope_CTRL
+    100018: Bell_Rope_JNT
+    100020: connect_pin
+    100022: Piston_1_JNT
+    100024: Piston_CTRL
+    100026: Root_CTRL
+    100028: Root_JNT
+    100030: small_wheel_1
+    100032: small_wheel_bar_1
+    100034: small_wheel_bar_2
+    100036: trailer
+    100038: trailer_cab
+    100040: Trailer_CTRL
+    100042: Trailer_JNT
+    100044: trailer_wheel_1
+    100046: trailer_wheel_2
+    100048: trailer_wheel_3
+    100050: trailer_wheel_4
+    100052: //RootNode
+    100054: train
+    100056: Train_CTRL
+    100058: train_engine
+    100060: Train_JNT
+    100062: transfer_pin_1
+    100064: transfer_pin_2
+    100066: wheel1
+    100068: wheel2
+    100070: wheel3
+    100072: Wheel_1_CTRL
+    100074: Wheel_1_CTRL 1
+    100076: Wheel_1_JNT
+    100078: wheel_1_JNT
+    100080: Wheel_2_CTRL
+    100082: Wheel_2_CTRL 1
+    100084: Wheel_2_JNT
+    100086: Wheel_2_JNT 1
+    100088: Wheel_3_CTRL
+    100090: Wheel_3_CTRL 1
+    100092: Wheel_3_JNT
+    100094: Wheel_3_JNT 1
+    100096: Wheel_4_CTRL
+    100098: Wheel_4_JNT
+    100100: wheel_bar_1
+    100102: wheel_bar_2
+    100104: Wheel_Small_CTRL
+    100106: Wheel_Small_JNT
+    400000: Bar_Large_JNT
+    400002: Bar_Large_JNT 1
+    400004: Bar_Small_JNT
+    400006: Bar_Small_JNT 1
+    400008: bell
+    400010: Bell_CTRL
+    400012: Bell_JNT
+    400014: bell_rope
+    400016: Bell_Rope_CTRL
+    400018: Bell_Rope_JNT
+    400020: connect_pin
+    400022: Piston_1_JNT
+    400024: Piston_CTRL
+    400026: Root_CTRL
+    400028: Root_JNT
+    400030: small_wheel_1
+    400032: small_wheel_bar_1
+    400034: small_wheel_bar_2
+    400036: trailer
+    400038: trailer_cab
+    400040: Trailer_CTRL
+    400042: Trailer_JNT
+    400044: trailer_wheel_1
+    400046: trailer_wheel_2
+    400048: trailer_wheel_3
+    400050: trailer_wheel_4
+    400052: //RootNode
+    400054: train
+    400056: Train_CTRL
+    400058: train_engine
+    400060: Train_JNT
+    400062: transfer_pin_1
+    400064: transfer_pin_2
+    400066: wheel1
+    400068: wheel2
+    400070: wheel3
+    400072: Wheel_1_CTRL
+    400074: Wheel_1_CTRL 1
+    400076: Wheel_1_JNT
+    400078: wheel_1_JNT
+    400080: Wheel_2_CTRL
+    400082: Wheel_2_CTRL 1
+    400084: Wheel_2_JNT
+    400086: Wheel_2_JNT 1
+    400088: Wheel_3_CTRL
+    400090: Wheel_3_CTRL 1
+    400092: Wheel_3_JNT
+    400094: Wheel_3_JNT 1
+    400096: Wheel_4_CTRL
+    400098: Wheel_4_JNT
+    400100: wheel_bar_1
+    400102: wheel_bar_2
+    400104: Wheel_Small_CTRL
+    400106: Wheel_Small_JNT
+    2100000: trailer_MAT
+    2100002: lambert1
+    2300000: connect_pin
+    3300000: connect_pin
+    4300000: trailer_cab
+    4300002: trailer_wheel_1
+    4300004: trailer_wheel_2
+    4300006: trailer_wheel_3
+    4300008: trailer_wheel_4
+    4300010: train
+    4300012: wheel1
+    4300014: wheel2
+    4300016: wheel3
+    4300018: small_wheel_1
+    4300020: transfer_pin_1
+    4300022: transfer_pin_2
+    4300024: small_wheel_bar_1
+    4300026: small_wheel_bar_2
+    4300028: wheel_bar_1
+    4300030: wheel_bar_2
+    4300032: bell_rope
+    4300034: bell
+    4300036: connect_pin
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: bell
+    13700002: bell_rope
+    13700004: small_wheel_1
+    13700006: small_wheel_bar_1
+    13700008: small_wheel_bar_2
+    13700010: trailer_cab
+    13700012: trailer_wheel_1
+    13700014: trailer_wheel_2
+    13700016: trailer_wheel_3
+    13700018: trailer_wheel_4
+    13700020: train
+    13700022: transfer_pin_1
+    13700024: transfer_pin_2
+    13700026: wheel1
+    13700028: wheel2
+    13700030: wheel3
+    13700032: wheel_bar_1
+    13700034: wheel_bar_2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
