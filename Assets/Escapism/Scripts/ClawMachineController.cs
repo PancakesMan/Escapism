@@ -5,7 +5,7 @@ using UnityEngine;
 public class ClawMachineController : MonoBehaviour {
 
     public bool Active;
-    public GameObject FrontBackMover, LeftRightMover, ClawCable, Claw;
+    public GameObject FrontBackMover, LeftRightMover, ClawCable, Claw, TractorBeam;
 
     private int _TimesButtonPressed = -1;
     private bool _Resetting = false;
@@ -118,6 +118,7 @@ public class ClawMachineController : MonoBehaviour {
             {
                 Debug.Log("Obj is not null");
                 Claw.GetComponent<Collider>().enabled = false;
+                TractorBeam.SetActive(false);
 
                 MaterialSelector ms = claw.GetCurrentSnappedObject().GetComponent<MaterialSelector>();
                 if (ms)
