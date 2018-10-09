@@ -66,9 +66,9 @@ public class ClawMachineController : MonoBehaviour {
                 LeftRightMover.GetComponent<PlatformScript>().enabled = false;
 
                 Claw.GetComponent<Collider>().enabled = true;
-                Claw.GetComponent<PlatformScript>().enabled = true;
-                Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
-                //ClawCable.GetComponent<TimedScale>().ResetTimer();
+                //Claw.GetComponent<PlatformScript>().enabled = true;
+                //Claw.GetComponent<PlatformScript>().mode = MoveMode.PingPong;
+                ClawCable.GetComponent<TimedScale>().ResetTimer();
 
                 _Resetting = true;
                 Invoke("ResetMachine", Claw.GetComponent<PlatformScript>().MovingDistanceY * 2 * 15);
