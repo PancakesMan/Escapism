@@ -26,6 +26,7 @@ TagManager:
   - Head
   - Solid
   - Ammo
+  - clock
   layers:
   - Default
   - TransparentFX
