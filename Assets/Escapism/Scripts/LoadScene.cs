@@ -3,21 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class LoadScene : MonoBehaviour {
 
-    public int sceneBuildIndex;
-
-    public void Load()
+    public void Load(int sceneBuildIndex)
     {
         SceneManager.LoadScene(sceneBuildIndex);
     }
 
-    public void LoadAsync()
+    public void LoadAsync(int sceneBuildIndex)
     {
-        StartCoroutine(LoadSceneAsync());
+        StartCoroutine(LoadSceneAsync(sceneBuildIndex));
     }
 
-    private IEnumerator LoadSceneAsync()
+    private IEnumerator LoadSceneAsync(int sceneBuildIndex)
     {
         AsyncOperation load = SceneManager.LoadSceneAsync(sceneBuildIndex);
         while (!load.isDone)
