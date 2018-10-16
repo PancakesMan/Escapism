@@ -41,6 +41,7 @@ public class ClawMachineController : MonoBehaviour {
         else if (other.CompareTag("Coin"))
         {
             Destroy(other.gameObject);
+            TractorBeam.SetActive(true);
             Active = true;
         }
     }
