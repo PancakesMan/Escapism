@@ -9,13 +9,22 @@ public class Timer : MonoBehaviour {
     public class TimerCompletedEvent : UnityEvent { }
 
     public float TimerLength;
+    public bool AutoStart = false;
+    public float AutoStartDelay = 0.0f;
+
     public TimerCompletedEvent OnTimerCompleted;
 
     private float _timer;
     private bool started;
 
-	// Update is called once per frame
-	void Update () {
+    private void Start()
+    {
+        if (AutoStart)
+            Invoke("StartTimer", AutoStartDelay);
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (started)
         {
             _timer += Time.deltaTime;
