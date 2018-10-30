@@ -9,6 +9,7 @@ public class LevelStatus : MonoBehaviour {
     public class LevelCompletedEvent : UnityEvent { }
 
     public string LevelName;
+    public bool FireEventOnlyOnStart = false;
     private bool _Completed;
 
     public LevelCompletedEvent OnLevelCompleted;
@@ -22,7 +23,7 @@ public class LevelStatus : MonoBehaviour {
 
     public void SetComplete()
     {
-        if (_Completed) return;
+        if (_Completed || FireEventOnlyOnStart) return;
 
         PlayerPrefs.SetInt(LevelName + "Completed", 1);
         OnLevelCompleted.Invoke();
