@@ -20,7 +20,7 @@ public class LevelStatus : MonoBehaviour {
             OnLevelCompleted.Invoke();
 	}
 
-    void SetComplete()
+    public void SetComplete()
     {
         if (_Completed) return;
 
@@ -28,7 +28,7 @@ public class LevelStatus : MonoBehaviour {
         OnLevelCompleted.Invoke();
     }
 
-    bool GetCompleted()
+    public bool GetCompleted()
     {
         return _Completed;
     }
