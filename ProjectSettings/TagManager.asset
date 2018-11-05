@@ -28,6 +28,8 @@ TagManager:
   - Ammo
   - clock
   - reel
+  - paperbook
+  - book
   layers:
   - Default
   - TransparentFX
@@ -39,8 +41,8 @@ TagManager:
   - 
   - light
   - train
-  - 
-  - 
+  - book
+  - paperbook
   - 
   - 
   - 
@@ -64,4 +66,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: book
+    uniqueID: 420275885
+    locked: 0
+  - name: paperbook
+    uniqueID: 190701949
     locked: 0
