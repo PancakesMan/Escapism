@@ -23,9 +23,10 @@ public class LevelStatus : MonoBehaviour {
 
     public void SetComplete()
     {
-        if (_Completed || FireEventOnlyOnStart) return;
-
+        if (_Completed) return;
         PlayerPrefs.SetInt(LevelName + "Completed", 1);
+
+        if (FireEventOnlyOnStart) return;
         OnLevelCompleted.Invoke();
     }
 
