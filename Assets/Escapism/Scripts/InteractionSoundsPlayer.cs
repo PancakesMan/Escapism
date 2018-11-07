@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using VRTK;
 
-[RequireComponent(typeof(AudioSource), typeof(VRTK_InteractableObject)]
+[RequireComponent(typeof(AudioSource), typeof(VRTK_InteractableObject))]
 public class InteractionSoundsPlayer : MonoBehaviour {
 
     public AudioClip grabbedAudioClip;
