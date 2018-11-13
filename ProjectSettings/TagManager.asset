@@ -30,6 +30,7 @@ TagManager:
   - reel
   - paperbook
   - book
+  - Bullet
   layers:
   - Default
   - TransparentFX
