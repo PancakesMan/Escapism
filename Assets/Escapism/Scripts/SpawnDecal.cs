@@ -13,7 +13,7 @@ public class SpawnDecal : MonoBehaviour {
         if (collision.transform.CompareTag("Bullet"))
         {
             Image newDecal = Instantiate(decal);
-            newDecal.transform.position = collision.contacts[0].point;
+            newDecal.transform.position = Camera.main.WorldToScreenPoint(collision.contacts[0].point);
             newDecal.transform.rotation = Quaternion.Euler(collision.contacts[0].normal);
             newDecal.transform.SetParent(worldspaceCanvas.transform);
         }
