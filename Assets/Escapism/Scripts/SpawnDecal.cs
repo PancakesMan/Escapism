@@ -14,6 +14,8 @@ public class SpawnDecal : MonoBehaviour {
         {
             Image newDecal = Instantiate(decal);
             newDecal.transform.position = collision.contacts[0].point;
+            newDecal.transform.rotation = Quaternion.Euler(collision.contacts[0].normal);
+            newDecal.transform.SetParent(worldspaceCanvas.transform);
         }
     }
 }
