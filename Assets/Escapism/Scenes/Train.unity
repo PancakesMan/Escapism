@@ -4076,11 +4076,11 @@ GameObject:
   - component: {fileID: 403277006}
   - component: {fileID: 403277009}
   - component: {fileID: 403277015}
-  - component: {fileID: 403277014}
   - component: {fileID: 403277013}
   - component: {fileID: 403277012}
   - component: {fileID: 403277011}
   - component: {fileID: 403277010}
+  - component: {fileID: 403277014}
   m_Layer: 0
   m_Name: stickwithHook
   m_TagString: Untagged
@@ -4244,7 +4244,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 403277005}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a1ebaa51525b734287157cb3f53f958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   precisionGrab: 1
@@ -4253,6 +4253,10 @@ MonoBehaviour:
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
+  detachDistance: 1
+  velocityLimit: Infinity
+  angularVelocityLimit: Infinity
+  maxDistanceDelta: 10
 --- !u!114 &403277015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4274,7 +4278,7 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 403277014}
+  grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 403277013}
   isUsable: 0
   holdButtonToUse: 1
@@ -4772,6 +4776,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0dc4ffb5cce85246b43ffcf1eaafe0b, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &445371850 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100150, guid: c817a0789d7c3ef4a879c988a04578a0, type: 3}
+  m_PrefabInternal: {fileID: 1779176912}
+--- !u!65 &445371854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445371850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6907713, y: 7.64763e-14, z: 13.046277}
+  m_Center: {x: 1.1546152, y: 0.049999304, z: 0.023144728}
 --- !u!1001 &450189504
 Prefab:
   m_ObjectHideFlags: 0
@@ -10394,7 +10414,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 853750595}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.1226, y: 1.835, z: 0.852}
+  m_LocalPosition: {x: 1.1226, y: 1.8168, z: 0.852}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1047095857}
@@ -17427,7 +17447,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1476741954}
   m_LocalRotation: {x: -0.6610914, y: -0.2501357, z: 0.66177994, w: 0.24987522}
-  m_LocalPosition: {x: -0.088258386, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0829, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 782460598}
@@ -19293,6 +19313,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 366322028}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: SnapDropZonePuzzle+PuzzleCompletedCorrectlyEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
