@@ -3953,6 +3953,7 @@ GameObject:
   - component: {fileID: 366322036}
   - component: {fileID: 366322035}
   - component: {fileID: 366322034}
+  - component: {fileID: 366322039}
   m_Layer: 0
   m_Name: wire
   m_TagString: wire
@@ -4156,6 +4157,21 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
+--- !u!114 &366322039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366322028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70aac0768eb8e124ab628798b66662f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
+  ResetTransform: {fileID: 1630920695}
+  ResetTime: 0.5
 --- !u!1 &372515625
 GameObject:
   m_ObjectHideFlags: 0
@@ -20522,8 +20538,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 366322028}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 366322039}
+        m_MethodName: StartReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 366322029}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20815,6 +20842,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: c7cf1e8c989bdb345b6232c7407b89f6, type: 3}
   m_PrefabInternal: {fileID: 1628568259}
+--- !u!1 &1630920694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1630920695}
+  m_Layer: 0
+  m_Name: Wire Disappear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1630920695
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1630920694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.601996, y: -0.45016813, z: -9.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1643251486
 GameObject:
   m_ObjectHideFlags: 0
