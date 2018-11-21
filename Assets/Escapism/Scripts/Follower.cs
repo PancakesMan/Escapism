@@ -7,7 +7,7 @@ public class Follower : MonoBehaviour {
     public Transform target;
     public Vector3 offset;
 	
-	// Update is called once per frame
+	// Make the gameobject follow the target transform with an optional offset
 	void Update () {
         transform.position = target.transform.position + offset;
 	}

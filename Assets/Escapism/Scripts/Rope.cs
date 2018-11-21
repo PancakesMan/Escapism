@@ -22,6 +22,7 @@ public class Rope : MonoBehaviour {
             //GameObject nextLink = Instantiate(chain);
             //nextLink.transform.SetAsLastSibling();
 
+            // Connect points on rope together
             joint = transform.GetChild(i).gameObject.AddComponent<HingeJoint>(); //nextLink.GetComponent<HingeJoint>();
             joint.connectedBody = i == 0 ? transform.GetComponent<Rigidbody>() : transform.GetChild(i - 1).GetComponent<Rigidbody>();
             //joint.useSpring = true;
@@ -38,6 +39,7 @@ public class Rope : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        // Update points in LineRenderer based on children of rope object
         LineRenderer rope = GetComponent<LineRenderer>();
         rope.positionCount = transform.childCount + 1;
         rope.SetPosition(0, transform.position);

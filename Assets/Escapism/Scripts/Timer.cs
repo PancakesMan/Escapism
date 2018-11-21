@@ -27,9 +27,11 @@ public class Timer : MonoBehaviour {
     void Update () {
         if (started)
         {
+            // Update timer and check if it is finished
             _timer += Time.deltaTime;
             if (_timer > TimerLength)
             {
+                // Reset timer and fire OnTimerCompleted event
                 ResetTimer();
                 OnTimerCompleted.Invoke();
             }

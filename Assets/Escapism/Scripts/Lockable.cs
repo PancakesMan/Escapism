@@ -29,13 +29,17 @@ public class Lockable : MonoBehaviour {
 
     void LockStateChangedHandler()
     {
+        // If the object is locked
         if (_Locked)
         {
             switch (Type)
             {
+                // If this is a RigidBody type lock, freeze all constraints to lock the object
                 case LockType.Rigidbody:
                     GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                     break;
+                // If this is an interactable type lock, disable player interactions
+                // and make the object kinematic
                 case LockType.Interactable:
                     GetComponent<VRTK.VRTK_InteractableObject>().isGrabbable = false;
                     GetComponent<Rigidbody>().isKinematic = true;
@@ -46,11 +50,14 @@ public class Lockable : MonoBehaviour {
         }
         else
         {
+            // unlock the object
             switch (Type)
             {
+                // Unfreeze constraints if it is a RigidBody type lock
                 case LockType.Rigidbody:
                     GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     break;
+               // Allow interactions if it is an interactable type lock
                 case LockType.Interactable:
                     GetComponent<VRTK.VRTK_InteractableObject>().isGrabbable = true;
                     GetComponent<Rigidbody>().isKinematic = false;
@@ -63,6 +70,7 @@ public class Lockable : MonoBehaviour {
 
     public void Lock()
     {
+        // Lock the obejct and fire OnLocked event
         _Locked = true;
         LockStateChangedHandler();
         OnLocked.Invoke();
@@ -70,6 +78,7 @@ public class Lockable : MonoBehaviour {
 
     public void Unlock()
     {
+        // Unlock the object and fire OnUnlocked event
         _Locked = false;
         LockStateChangedHandler();
         OnUnlocked.Invoke();

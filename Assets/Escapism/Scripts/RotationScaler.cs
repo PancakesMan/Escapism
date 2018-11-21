@@ -22,11 +22,12 @@ public class RotationScaler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        // determine change in rotation of rotator object
         float deltaAngle = Mathf.DeltaAngle(rotator.transform.localEulerAngles[(int)RotationAxis], lastAngle);
         lastAngle = rotator.transform.localEulerAngles[(int)RotationAxis];
         rotatorAngle += deltaAngle;
 
+        // Update the scale of this object based on rotation of rotator
         float scale =  rotatorAngle/ ratio;
         Vector3 newScale = transform.localScale;
         newScale[(int)ScaleAxis] = 1 + scale;

@@ -13,6 +13,7 @@ public class SpawnDecal : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
+        // Spawn bullethole image at location of bullet collision with object
         if (collision.transform.CompareTag("Bullet"))
         {
             Image newDecal = Instantiate(decal);

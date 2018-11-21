@@ -34,6 +34,7 @@ public class Task : MonoBehaviour {
 
     public void StartTask()
     {
+        // Set the TaskState to InProgress if it isn't already set and fire OnStarted event
         if (_State == TaskState.Inactive)
         {
             _State = TaskState.InProgress;
@@ -43,6 +44,7 @@ public class Task : MonoBehaviour {
 
     public void Complete()
     {
+        // Set the TaskState to Complete from InProgress only and fire OnCompleted event
         if (_State == TaskState.InProgress)
         {
             _State = TaskState.Completed;
@@ -52,6 +54,7 @@ public class Task : MonoBehaviour {
 
     public void Fail()
     {
+        // Set the TaskState fo Failed from InProgress only and fire OnFailed event
         if (_State == TaskState.InProgress)
         {
             _State = TaskState.Failed;

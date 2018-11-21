@@ -29,6 +29,7 @@ public class SnapDropZonePuzzle : MonoBehaviour {
 	void Start () {
 		foreach (DropAreaObjectConnector connector in List)
         {
+            // Subscribe to SnapDropZone's ObjectSnappedToDropZone event
             connector.SnapDropZone.ObjectSnappedToDropZone += ObjectSnappedHandler;
         }
 	}
@@ -45,19 +46,25 @@ public class SnapDropZonePuzzle : MonoBehaviour {
         {
             // If a snap zone has no object, puzzle can't be complete
             if (!connector.SnapDropZone.GetCurrentSnappedObject()) return;
-
+            // If the object is correct, increment correct count
             if (connector.SnapDropZone.GetCurrentSnappedObject().name == connector.Object.name)
                 correctCount++;
             else
             {
+                // Fire the OnPuzzeCompletedIncorectly early if 
+                // the puzzle has at least one incorrect object
                 if (FireCompletedIncorrectlyEarly)
                     OnPuzzleCompletedIncorrectly.Invoke();
             }
         }
 
+        // If the puzzle is complete
         if (correctCount == List.Length)
         {
+            // Fire the OnPuzzleCompletedCorrectly event
             OnPuzzleCompletedCorrectly.Invoke();
+
+            // Stop each object in the SnapDropZones from being picked up
             foreach (DropAreaObjectConnector connector in List)
             {
                 GameObject snapped = connector.SnapDropZone.GetCurrentSnappedObject();
@@ -70,7 +77,8 @@ public class SnapDropZonePuzzle : MonoBehaviour {
             }
             enabled = false;
         }
-        else
+        else // If puzzle is completed but some parts are wrong
+            // Fire the OnPuzzleCompletedIncorrectly event
             OnPuzzleCompletedIncorrectly.Invoke();
     }
 }

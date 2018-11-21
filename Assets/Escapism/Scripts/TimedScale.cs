@@ -29,6 +29,7 @@ public class TimedScale : MonoBehaviour {
         {
             //timer = 2.0f;
             alpha = Mathf.PingPong(timer, 1.0f);
+            // PingPong the object between InitialScale and TargetScale based on timer
             transform.localScale = Vector3.Lerp(InitialScale, TargetScale, alpha);
         }
 

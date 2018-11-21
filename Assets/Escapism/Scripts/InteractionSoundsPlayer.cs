@@ -6,6 +6,8 @@ using VRTK;
 [System.Serializable]
 public struct GameObjectCollisionSoundPair
 {
+    // Struct to link clips to objects for sound
+    // when an object collides with a specific object
     public GameObject obj;
     public AudioClip clip;
 }
@@ -27,7 +29,10 @@ public class InteractionSoundsPlayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        // Get VRTK InteractableObject component
         interactable = GetComponent<VRTK_InteractableObject>();
+
+        // Assign sounds to play when events are fired from the InteractableObject script
 
         if (grabbedAudioClip)
             interactable.InteractableObjectGrabbed += Interactions_InteractableObjectGrabbed;
@@ -58,8 +63,10 @@ public class InteractionSoundsPlayer : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
+        // Check for a specific sound for the colliding object
         foreach (GameObjectCollisionSoundPair collisionSound in ObjectSpecificCollisionSounds)
         {
+            // If one is found, play the sound and exit function
             if (collisionSound.obj == collision.gameObject)
             {
                 audioSource.PlayOneShot(collisionSound.clip);
@@ -67,7 +74,8 @@ public class InteractionSoundsPlayer : MonoBehaviour {
             }
         }
 
-        // If no sound was played in the the loop, play default sound
+        // If no object specific sound was found and played in the the loop
+        // play default object collision sound
         if (defaultAudioClip)
             audioSource.PlayOneShot(defaultAudioClip);
     }

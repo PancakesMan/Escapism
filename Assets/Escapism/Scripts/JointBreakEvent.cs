@@ -10,6 +10,7 @@ public class JointBreakEvent : MonoBehaviour {
 
     public JointBreakingEvent OnJointBreaking;
 
+    // Helper function to allow editor event when joint is broken
     private void OnJointBreak(float breakForce)
     {
         OnJointBreaking.Invoke();
